@@ -1,0 +1,68 @@
+//////////////// VIEW PROBLEM FILE ////////////////
+$ cd skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/
+$ cd cells
+$ cd nfet_01v8
+$ less sky130_fd_pr__nfet_01v8__ss.pm3.spice
+
+
+--------------------------------------------------------------------------------------
+//////////////// APPLYING PYTHON SCRIPT ////////////////
+$ cd ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/
+$ cp ~/Downloads/ic_tools_install-main/july-2023-scripts/process_mismatch_params.py process_mismatch_params.py
+$ python3 process_mismatch_params.py
+
+//////////////// VIEW CHANGES ////////////////
+$ cd skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest
+$ cd cells/nfet_01v8
+$ ls 
+###can see a bunch of new files 
+$ ls sky130_fd_pr__nfet_01v8__ss.pm3.spice
+###the file has been changed
+
+
+--------------------------------------------------------------------------------------
+//////////////// CHANGE SIMULATION MODELS ////////////////
+$ cd /usr/local/share/xschem/xschem_library/madvlsi
+$ sudo vim ff_models.sym
+###add a new line after `value=\\".option wnflag=1`:
+`.param MC_SWITCH=0.0`
+###EXIT
+$ sudo vim fs_models.sym
+###do the same thing to ss, sf and tt models 
+###EXIT
+
+//////////////// SIMULATE WITH DIFFERENT SOURCE VALUES ////////////////
+### simulate with `.param MC_SWITCH=1.0` - just change in xschem TT models - should see some discrepancies
+--------------------------------------------------------------------------------------
+//////////////// BATCH MODE AND DATA EXPORT ////////////////
+
+//////////////// CONTROL BLOCK STARTS HERE ////////////////
+.control
+	set wr_vecnames
+	set wr_singlescale
+
+	let mc_runs = 10
+	let run = 1
+	dowhile run <= mc_runs
+		dc vin 0 1.8 0.01
+		wrdata ~/Documents/mctut/<filename>{$&run}.txt v(Vout)
+		reset
+		let run = run + 1
+	end
+.endc
+//////////////// CONTROL BLOCK ENDS HERE ////////////////
+
+
+//////////////// RUN SIMULATION ////////////////
+### do `netlist`-`simulate`
+//////////////// NGSPICE SIM COMMANDS START HERE ////////////////
+$ setplot
+$ setplot new
+$ plot dc1.v(Vout) dc2.v(Vout) dc3.v(Vout) dc4.v(Vout) dc5.v(Vout) dc6.v(Vout) dc7.v(Vout) dc8.v(Vout) dc9.v(Vout) dc10.v(Vout)
+//////////////// NGSPICE SIM COMMANDS END HERE ////////////////
+
+
+---------------------------------------------------------------------------------------
+//////////////// TERMINAL COMMANDS START HERE ////////////////
+$ cd Documents/mctut
+### should see the .txt file

@@ -19,9 +19,9 @@ L 4 60 -30 80 -30 {}
 B 5 77.5 -32.5 82.5 -27.5 {name=Vbp
 dir=in}
 B 5 77.5 7.5 82.5 12.5 {name=Vcn
-dir=in}
+dir=out}
 B 5 77.5 -12.5 82.5 -7.5 {name=Vcp
-dir=in}
+dir=out}
 B 5 77.5 27.5 82.5 32.5 {name=Vbn
 dir=in}
 T {@name} 30 43 0 0 0.2 0.2 {}

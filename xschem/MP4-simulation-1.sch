@@ -40,42 +40,40 @@ N 180 130 210 130 {
 lab=#net6}
 N 180 150 210 150 {
 lab=#net7}
-N 210 170 210 190 {
-lab=#net8}
-C {madvlsi/vsource.sym} 110 360 0 0 {name=V1
+C {madvlsi/vsource.sym} 110 300 0 0 {name=V1
 value=1.8}
-C {madvlsi/gnd.sym} 110 390 0 0 {name=l1 lab=GND}
-C {madvlsi/vsource.sym} 170 360 0 0 {name=V2
+C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
+C {madvlsi/vsource.sym} 170 300 0 0 {name=V2
 value=1.8}
-C {madvlsi/gnd.sym} 170 390 0 0 {name=l2 lab=GND}
-C {madvlsi/vsource.sym} 230 360 0 0 {name=V3
+C {madvlsi/gnd.sym} 170 330 0 0 {name=l2 lab=GND}
+C {madvlsi/vsource.sym} 230 300 0 0 {name=V3
 value=1.8}
-C {madvlsi/gnd.sym} 230 390 0 0 {name=l3 lab=GND}
-C {madvlsi/vsource.sym} 290 360 0 0 {name=V4
+C {madvlsi/gnd.sym} 230 330 0 0 {name=l3 lab=GND}
+C {madvlsi/vsource.sym} 290 300 0 0 {name=V4
 value=1.8}
-C {madvlsi/gnd.sym} 290 390 0 0 {name=l4 lab=GND}
-C {madvlsi/vsource.sym} 350 360 0 0 {name=V5
+C {madvlsi/gnd.sym} 290 330 0 0 {name=l4 lab=GND}
+C {madvlsi/vsource.sym} 350 300 0 0 {name=V5
 value=1.8}
-C {madvlsi/gnd.sym} 350 390 0 0 {name=l5 lab=GND}
-C {madvlsi/vsource.sym} 410 360 0 0 {name=V6
+C {madvlsi/gnd.sym} 350 330 0 0 {name=l5 lab=GND}
+C {madvlsi/vsource.sym} 410 300 0 0 {name=V6
 value=1.8}
-C {madvlsi/gnd.sym} 410 390 0 0 {name=l6 lab=GND}
-C {madvlsi/vsource.sym} 50 360 0 0 {name=V0
+C {madvlsi/gnd.sym} 410 330 0 0 {name=l6 lab=GND}
+C {madvlsi/vsource.sym} 50 300 0 0 {name=V0
 value=1.8}
-C {madvlsi/gnd.sym} 50 390 0 0 {name=l7 lab=GND}
+C {madvlsi/gnd.sym} 50 330 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 90 2 1 {name=p1 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 110 330 2 0 {name=p2 sig_type=std_logic lab=V1}
+C {devices/lab_pin.sym} 110 270 2 0 {name=p2 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 70 70 2 1 {name=p3 sig_type=std_logic lab=V0}
 C {devices/lab_pin.sym} 70 190 2 1 {name=p4 sig_type=std_logic lab=V6}
 C {devices/lab_pin.sym} 70 110 2 1 {name=p6 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} 70 150 2 1 {name=p7 sig_type=std_logic lab=V4}
 C {devices/lab_pin.sym} 70 130 2 1 {name=p8 sig_type=std_logic lab=V3}
-C {devices/lab_pin.sym} 50 330 2 0 {name=p10 sig_type=std_logic lab=V0}
-C {devices/lab_pin.sym} 170 330 2 0 {name=p11 sig_type=std_logic lab=V2}
-C {devices/lab_pin.sym} 230 330 2 0 {name=p12 sig_type=std_logic lab=V3}
-C {devices/lab_pin.sym} 290 330 2 0 {name=p13 sig_type=std_logic lab=V4}
-C {devices/lab_pin.sym} 350 330 2 0 {name=p14 sig_type=std_logic lab=V5}
-C {devices/lab_pin.sym} 410 330 2 0 {name=p16 sig_type=std_logic lab=V6}
+C {devices/lab_pin.sym} 50 270 2 0 {name=p10 sig_type=std_logic lab=V0}
+C {devices/lab_pin.sym} 170 270 2 0 {name=p11 sig_type=std_logic lab=V2}
+C {devices/lab_pin.sym} 230 270 2 0 {name=p12 sig_type=std_logic lab=V3}
+C {devices/lab_pin.sym} 290 270 2 0 {name=p13 sig_type=std_logic lab=V4}
+C {devices/lab_pin.sym} 350 270 2 0 {name=p14 sig_type=std_logic lab=V5}
+C {devices/lab_pin.sym} 410 270 2 0 {name=p16 sig_type=std_logic lab=V6}
 C {madvlsi/tt_models.sym} 490 -20 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -91,15 +89,14 @@ let mc_run = 10
 let run = 1
 dowhile run<= mc_run
   dc Vb 0 1.8 0.01
-  wrdata ~/Documents/MP4/simulation_first\{$&run\}.txt i(Vmeas)
+  wrdata ~/Documents/MP4/simulation_first\{$&run\}.txt v(Vout)
   reset
   let run = run + 1
  end
 .endc"}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
-C {devices/lab_pin.sym} 210 250 2 1 {name=p5 sig_type=std_logic lab=V_Ifout}
+C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Ifout}
 C {/home/madvlsi/DAC-VLSI/xschem/ladder.sym} 70 210 0 0 {name=x1}
 C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 150 30 0 0 {name=x2}
-C {/home/madvlsi/DAC-VLSI/xschem/FVF-1.sym} 460 180 0 1 {name=x3}
+C {/home/madvlsi/DAC-VLSI/xschem/FVF-1.sym} 80 180 0 0 {name=x3}
 C {/home/madvlsi/DAC-VLSI/xschem/VGen.sym} 440 160 0 1 {name=x4}
-C {devices/ammeter.sym} 210 220 0 1 {name=Vmeas}
