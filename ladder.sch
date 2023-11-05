@@ -819,10 +819,10 @@ spiceprefix=X
 C {madvlsi/vdd.sym} 100 -20 0 0 {name=l1 lab=VDD}
 C {madvlsi/gnd.sym} 1560 370 0 0 {name=l16 lab=GND}
 C {madvlsi/gnd.sym} 1560 220 0 0 {name=l17 lab=GND}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 320 330 0 0 {name=x1}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 490 330 0 0 {name=x2}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 660 330 0 0 {name=x3}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 830 330 0 0 {name=x4}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 1000 330 0 0 {name=x5}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 1170 330 0 0 {name=x6}
-C {/home/madvlsi/DAC-VLSI/inverter.sym} 1340 330 0 0 {name=x7}
+C {./inverter.sym} 320 330 0 0 {name=x1}
+C {./inverter.sym} 490 330 0 0 {name=x2}
+C {./inverter.sym} 660 330 0 0 {name=x3}
+C {./inverter.sym} 830 330 0 0 {name=x4}
+C {./inverter.sym} 1000 330 0 0 {name=x5}
+C {./inverter.sym} 1170 330 0 0 {name=x6}
+C {./inverter.sym} 1340 330 0 0 {name=x7}

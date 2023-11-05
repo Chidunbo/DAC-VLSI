@@ -98,5 +98,5 @@ dowhile run<= mc_run
 C {./ladder.sym} 70 210 0 0 {name=x2}
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
-C {/home/madvlsi/DAC-VLSI/VGen.sym} 440 160 0 1 {name=x4}
+C {./VGen.sym} 440 160 0 1 {name=x4}
 C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Ifout}
