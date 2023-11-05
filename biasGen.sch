@@ -13,71 +13,76 @@ N -170 -60 -140 -60 {
 lab=#net2}
 N -200 -160 -200 -90 {
 lab=#net2}
-N -50 -190 -50 -160 {
-lab=#net1}
-N -110 -160 -50 -160 {
-lab=#net1}
 N -200 -100 -160 -100 {
 lab=#net2}
 N -160 -100 -160 -60 {
 lab=#net2}
 N -110 -30 -110 40 {
-lab=VN}
+lab=GND}
 N -200 30 -200 40 {
-lab=VN}
-N -200 40 -110 40 {
-lab=VN}
-N -110 40 20 40 {
-lab=VN}
-N 20 -30 20 40 {
-lab=VN}
-N -200 -220 -110 -220 {
-lab=VP}
-N -110 -220 20 -220 {
-lab=VP}
-N 20 -220 110 -220 {
-lab=VP}
-N -310 -220 -200 -220 {
-lab=VP}
-N -300 40 -200 40 {
-lab=VN}
-N 110 -60 110 -30 {
-lab=VN}
-N 20 -160 20 -120 {
-lab=#net3}
-N 110 -160 110 -120 {
-lab=#net4}
-N 50 -90 80 -90 {
-lab=#net4}
-N 60 -120 60 -90 {
-lab=#net4}
-N 60 -120 110 -120 {
-lab=#net4}
+lab=GND}
 N 110 30 110 40 {
-lab=VN}
-N 20 40 110 40 {
-lab=VN}
-N 20 -60 20 -30 {
-lab=VN}
+lab=GND}
 N 110 -30 110 30 {
-lab=VN}
-N 110 -220 210 -220 {
-lab=VP}
-N 210 -160 210 -120 {
+lab=GND}
+N -200 -230 -200 -220 {
+lab=VDD}
+N -200 -230 210 -230 {
+lab=VDD}
+N 210 -230 210 -220 {
+lab=VDD}
+N 110 -230 110 -220 {
+lab=VDD}
+N 20 -230 20 -220 {
+lab=VDD}
+N -110 -230 -110 -220 {
+lab=VDD}
+N -200 -240 -200 -230 {
+lab=VDD}
+N -200 40 110 40 {
+lab=GND}
+N -200 40 -200 50 {
+lab=GND}
+N 20 -140 60 -140 {
+lab=Vbp}
+N 60 -190 60 -140 {
+lab=Vbp}
+N 60 -190 80 -190 {
+lab=Vbp}
+N 80 -190 180 -190 {
+lab=Vbp}
+N -170 -190 -160 -190 {
+lab=Vbp}
+N -160 -190 -160 -140 {
+lab=Vbp}
+N -160 -140 20 -140 {
+lab=Vbp}
+N -70 -190 -70 -150 {
+lab=#net1}
+N -110 -150 -70 -150 {
+lab=#net1}
+N 210 -160 210 -150 {
 lab=Iin}
-N 80 -190 80 -150 {
+N 210 -150 220 -150 {
+lab=Iin}
+N 180 -190 280 -190 {
+lab=Vbp}
+N 20 -140 20 -90 {
+lab=Vbp}
+N 20 -160 20 -140 {
+lab=Vbp}
+N 110 -160 110 -90 {
 lab=#net3}
-N -170 -190 -170 -150 {
+N 20 -30 20 40 {
+lab=GND}
+N 50 -60 80 -60 {
 lab=#net3}
-N 80 -150 180 -150 {
+N 70 -100 70 -60 {
 lab=#net3}
-N 180 -190 180 -150 {
+N 70 -100 110 -100 {
 lab=#net3}
-N 20 -150 80 -150 {
-lab=#net3}
-N -170 -150 20 -150 {
-lab=#net3}
-C {madvlsi/nmos3.sym} 110 -90 0 0 {name=M1
+N 110 -100 130 -100 {}
+C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
 L=0.15
 W=1
 body=GND
@@ -92,7 +97,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {madvlsi/nmos3.sym} 20 -90 2 0 {name=M2
+C {madvlsi/nmos3.sym} 20 -60 2 0 {name=M2
 L=0.15
 W=1
 body=GND
@@ -200,8 +205,6 @@ spiceprefix=X
 C {madvlsi/resistor.sym} -200 0 0 0 {name=R1
 value=100k
 m=1}
-C {devices/iopin.sym} -300 40 2 0 {name=p1 lab=VN}
-C {devices/iopin.sym} 210 -120 2 0 {name=p2 lab=Iin}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
 L=0.15
 W=1
@@ -217,4 +220,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} -310 -220 2 0 {name=p4 lab=VP}
+C {madvlsi/vdd.sym} -200 -240 0 0 {name=l1 lab=VDD}
+C {madvlsi/gnd.sym} -200 50 0 0 {name=l2 lab=GND}
+C {devices/opin.sym} 220 -150 0 0 {name=p1 lab=Iin}
+C {devices/opin.sym} 280 -190 0 0 {name=p2 lab=Vbp}
+C {devices/opin.sym} 130 -100 0 0 {name=p3 lab=Vbn}

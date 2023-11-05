@@ -160,51 +160,39 @@ lab=#net5}
 N 180 -30 240 -30 {
 lab=Iin}
 N 210 0 340 0 {
-lab=VP}
+lab=VDD}
 N 340 0 380 0 {
-lab=VP}
+lab=VDD}
 N 380 0 510 0 {
-lab=VP}
+lab=VDD}
 N 510 0 550 -0 {
-lab=VP}
+lab=VDD}
 N 550 -0 680 0 {
-lab=VP}
+lab=VDD}
 N 680 0 720 0 {
-lab=VP}
+lab=VDD}
 N 190 0 210 -0 {
-lab=VP}
+lab=VDD}
 N 210 70 210 320 {
 lab=V0}
 N 380 70 380 320 {
 lab=V1}
 N 550 70 550 310 {
 lab=V2}
-N 430 250 600 250 {
-lab=VP}
 N 550 310 550 320 {
 lab=V2}
-N 180 250 250 250 {
-lab=VP}
-N 600 250 780 250 {
-lab=VP}
-N 780 250 950 250 {
-lab=VP}
 N 720 70 720 320 {
 lab=V3}
 N 890 70 890 320 {
 lab=V4}
-N 950 250 1130 250 {
-lab=VP}
-N 1130 250 1300 250 {
-lab=VP}
 N 1060 70 1060 320 {
 lab=V5}
 N 1230 70 1230 320 {
 lab=V6}
 N 180 0 190 0 {
-lab=VP}
+lab=VDD}
 N 720 -0 1400 0 {
-lab=VP}
+lab=VDD}
 N 210 320 210 490 {
 lab=V0}
 N 380 320 380 490 {
@@ -221,8 +209,6 @@ N 1230 320 1230 480 {
 lab=V6}
 N 1260 170 1450 170 {
 lab=#net2}
-N 180 0 180 250 {
-lab=VP}
 N 890 480 890 490 {
 lab=V4}
 N 1060 480 1060 500 {
@@ -235,10 +221,6 @@ N 290 210 360 210 {
 lab=#net17}
 N 360 210 360 330 {
 lab=#net17}
-N 250 250 290 250 {
-lab=VP}
-N 290 250 430 250 {
-lab=VP}
 N 460 70 460 200 {
 lab=#net18}
 N 460 200 460 210 {
@@ -253,10 +235,6 @@ N 630 210 700 210 {
 lab=#net19}
 N 700 210 700 330 {
 lab=#net19}
-N 290 400 460 400 {
-lab=VN}
-N 460 400 630 400 {
-lab=VN}
 N 800 70 800 210 {
 lab=#net20}
 N 800 210 870 210 {
@@ -269,10 +247,6 @@ N 970 210 1040 210 {
 lab=#net21}
 N 1040 210 1040 330 {
 lab=#net21}
-N 620 400 970 400 {
-lab=VN}
-N 970 400 1140 400 {
-lab=VN}
 N 1140 70 1140 210 {
 lab=#net22}
 N 1140 210 1200 210 {
@@ -287,33 +261,13 @@ N 1310 210 1380 210 {
 lab=#net23}
 N 1380 210 1380 330 {
 lab=#net23}
-N 1300 250 1310 250 {
-lab=VP}
-N 1140 400 1310 400 {
-lab=VN}
-N 180 400 290 400 {
-lab=VN}
 N 1450 140 1520 140 {
 lab=#net5}
-N 1310 400 1510 400 {
-lab=VN}
-N 1510 350 1510 400 {
-lab=VN}
-N 1520 200 1520 250 {
-lab=VN}
-N 1520 250 1520 400 {
-lab=VN}
-N 1510 400 1520 400 {
-lab=VN}
 N 1540 320 1570 320 {
 lab=#net2}
 N 1550 170 1570 170 {
 lab=#net5}
 N 1510 220 1510 290 {
-lab=#net2}
-N 1510 290 1550 290 {
-lab=#net2}
-N 1550 290 1550 320 {
 lab=#net2}
 N 1500 120 1500 140 {
 lab=#net5}
@@ -329,14 +283,34 @@ N 1600 80 1610 80 {
 lab=Idump}
 N 1600 80 1600 140 {
 lab=Idump}
-N 1600 250 1600 290 {}
-N 1600 250 1610 250 {}
-N 1600 200 1600 230 {}
-N 1590 230 1600 230 {}
-N 1590 230 1590 400 {}
-N 1520 400 1590 400 {}
-N 1600 350 1600 400 {}
-N 1590 400 1600 400 {}
+N 1600 250 1600 290 {
+lab=Iout}
+N 1600 250 1610 250 {
+lab=Iout}
+N 100 -20 100 0 {
+lab=VDD}
+N 100 0 180 0 {
+lab=VDD}
+N 1520 200 1520 210 {
+lab=GND}
+N 1520 210 1600 210 {
+lab=GND}
+N 1600 200 1600 210 {
+lab=GND}
+N 1560 210 1560 220 {
+lab=GND}
+N 1510 350 1510 360 {
+lab=GND}
+N 1510 360 1600 360 {
+lab=GND}
+N 1600 350 1600 360 {
+lab=GND}
+N 1560 360 1560 370 {
+lab=GND}
+N 1550 280 1550 320 {
+lab=#net2}
+N 1510 280 1550 280 {
+lab=#net2}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
 L=0.15
 W=1
@@ -772,25 +746,16 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 180 250 2 0 {name=p5 lab=VP}
-C {devices/iopin.sym} 180 -30 2 0 {name=p3 lab=Iin}
-C {devices/iopin.sym} 210 490 1 0 {name=p4 lab=V0}
-C {devices/iopin.sym} 380 490 1 0 {name=p6 lab=V1}
-C {devices/iopin.sym} 550 490 1 0 {name=p7 lab=V2}
-C {devices/iopin.sym} 720 490 1 0 {name=p8 lab=V3}
-C {devices/iopin.sym} 890 490 1 0 {name=p9 lab=V4}
-C {devices/iopin.sym} 1060 500 1 0 {name=p10 lab=V5}
-C {devices/iopin.sym} 1230 500 1 0 {name=p11 lab=V6}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 320 330 0 0 {name=x1}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 490 330 0 0 {name=x2}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 660 330 0 0 {name=x3}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 830 330 0 0 {name=x4}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 1000 330 0 0 {name=x5}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 1170 330 0 0 {name=x6}
-C {/home/madvlsi/Documents/MP1/Schematics/inverter.sym} 1340 330 0 0 {name=x7}
-C {devices/iopin.sym} 180 400 2 0 {name=p12 lab=VN}
-C {devices/iopin.sym} 1610 80 0 0 {name=p1 lab=Idump}
-C {devices/iopin.sym} 1610 250 0 0 {name=p2 lab=Iout}
+C {devices/ipin.sym} 180 -30 2 1 {name=p3 lab=Iin}
+C {devices/ipin.sym} 210 490 1 1 {name=p4 lab=V0}
+C {devices/ipin.sym} 380 490 3 0 {name=p6 lab=V1}
+C {devices/ipin.sym} 550 490 3 0 {name=p7 lab=V2}
+C {devices/ipin.sym} 720 490 3 0 {name=p8 lab=V3}
+C {devices/ipin.sym} 890 490 3 0 {name=p9 lab=V4}
+C {devices/ipin.sym} 1060 500 3 0 {name=p10 lab=V5}
+C {devices/ipin.sym} 1230 500 3 0 {name=p11 lab=V6}
+C {devices/opin.sym} 1610 80 0 0 {name=p1 lab=Idump}
+C {devices/opin.sym} 1610 250 0 0 {name=p2 lab=Iout}
 C {madvlsi/nmos3.sym} 1520 170 2 0 {name=M30
 L=0.15
 W=1
@@ -851,3 +816,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {madvlsi/vdd.sym} 100 -20 0 0 {name=l1 lab=VDD}
+C {madvlsi/gnd.sym} 1560 370 0 0 {name=l16 lab=GND}
+C {madvlsi/gnd.sym} 1560 220 0 0 {name=l17 lab=GND}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 320 330 0 0 {name=x1}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 490 330 0 0 {name=x2}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 660 330 0 0 {name=x3}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 830 330 0 0 {name=x4}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 1000 330 0 0 {name=x5}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 1170 330 0 0 {name=x6}
+C {/home/madvlsi/DAC-VLSI/inverter.sym} 1340 330 0 0 {name=x7}
