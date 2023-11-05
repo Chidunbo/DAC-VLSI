@@ -8,4 +8,4 @@ Here's a list of changes I've made:
 Here's a list of items I haven't considered about when I was making changes:
 - basically anything about simulations
 
--LAUREN
+-Lauren
