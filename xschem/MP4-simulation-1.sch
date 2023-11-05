@@ -40,6 +40,7 @@ N 180 130 210 130 {
 lab=#net6}
 N 180 150 210 150 {
 lab=#net7}
+C {./biasGen.sym} 150 30 0 0 {name=x1}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=V1
 value=1.8}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -74,14 +75,14 @@ C {devices/lab_pin.sym} 230 270 2 0 {name=p12 sig_type=std_logic lab=V3}
 C {devices/lab_pin.sym} 290 270 2 0 {name=p13 sig_type=std_logic lab=V4}
 C {devices/lab_pin.sym} 350 270 2 0 {name=p14 sig_type=std_logic lab=V5}
 C {devices/lab_pin.sym} 410 270 2 0 {name=p16 sig_type=std_logic lab=V6}
-C {madvlsi/tt_models.sym} 490 -20 0 0 {
+C {madvlsi/tt_models.sym} 510 30 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 500 150 0 0 {name=s1 only_toplevel=false value=".control
+C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value=".control
 set wr_vecnames
 set wr_singlescale
 
@@ -94,9 +95,8 @@ dowhile run<= mc_run
   let run = run + 1
  end
 .endc"}
+C {./ladder.sym} 70 210 0 0 {name=x2}
+C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
+C {./VGen.sym} 440 160 0 1 {name=x4}
 C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Ifout}
-C {/home/madvlsi/DAC-VLSI/xschem/ladder.sym} 70 210 0 0 {name=x1}
-C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 150 30 0 0 {name=x2}
-C {/home/madvlsi/DAC-VLSI/xschem/FVF-1.sym} 80 180 0 0 {name=x3}
-C {/home/madvlsi/DAC-VLSI/xschem/VGen.sym} 440 160 0 1 {name=x4}

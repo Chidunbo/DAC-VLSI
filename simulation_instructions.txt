@@ -31,7 +31,7 @@ $ sudo vim fs_models.sym
 ###do the same thing to ss, sf and tt models 
 ###EXIT
 
-//////////////// SIMULATE WITH DIFFERENT SOURCE VALUES ////////////////
+//////////////// SIMULATE WITH GAUSS VARIATIONS ////////////////
 ### simulate with `.param MC_SWITCH=1.0` - just change in xschem TT models - should see some discrepancies
 --------------------------------------------------------------------------------------
 //////////////// BATCH MODE AND DATA EXPORT ////////////////
@@ -66,3 +66,55 @@ $ plot dc1.v(Vout) dc2.v(Vout) dc3.v(Vout) dc4.v(Vout) dc5.v(Vout) dc6.v(Vout) d
 //////////////// TERMINAL COMMANDS START HERE ////////////////
 $ cd Documents/mctut
 ### should see the .txt file
+
+
+---------------------------------------------------------------------------------------
+//////////////// R-2R LADDER SIMULATION CONTROL BLOCK STARTS HERE ////////////////
+name=SPICE only_toplevel=false value=".param Iref=100u
+.control
+  set wr_vecnames
+  set wr_singlescale
+  let code = 0
+  while code < 120
+    if code eq 0
+      let b0 = 0
+    else
+      let b0 = code % 2
+    end
+    if floor(code / 2) eq 0
+      let b1 = 0
+    else
+      let b1 = floor(code / 2) % 2
+    end
+    if floor(code / 4) eq 0
+      let b2 = 0
+    else
+      let b2 = floor(code / 4) % 2
+    end
+    if floor(code / 8) eq 0
+      let b3 = 0
+    else
+      let b3 = floor(code / 8) % 2
+    end
+    if floor(code / 16) eq 0
+      let b4 = 0
+    else
+      let b4 = floor(code / 16) % 2
+    end
+    if floor(code / 32) eq 0
+      let b5 = 0
+    else
+      let b5 = floor(code / 32) % 2
+    end
+    if floor(code / 64) eq 0
+      let b6 = 0
+    else
+      let b6 = floor(code / 64) % 2
+    end
+    alter vb0 $&b0
+    alter vb1 $&b1
+    alter vb2 $&b2
+    alter vb3 $&b3
+    alter vb4 $&b4
+    alter vb5 $&b5
+    alter vb6 $&b6
