@@ -16,54 +16,50 @@ N 330 150 360 150 {
 lab=#net2}
 N 330 170 360 170 {
 lab=#net3}
-N 300 50 310 50 {
-lab=#net4}
-N 310 50 310 110 {
-lab=#net4}
 N 300 10 340 10 {
 lab=#net1}
 N 340 10 340 130 {
 lab=#net1}
-N 300 30 430 30 {
-lab=#net5}
-N 430 30 430 210 {
-lab=#net5}
-N 350 210 430 210 {
-lab=#net5}
-N 350 190 350 210 {
-lab=#net5}
 N 350 190 360 190 {
-lab=#net5}
-N 180 110 310 110 {
 lab=#net4}
 N 180 130 210 130 {
-lab=#net6}
+lab=#net5}
 N 180 150 210 150 {
+lab=#net6}
+N 180 110 300 110 {
 lab=#net7}
-N 210 170 210 190 {
-lab=#net8}
-N 210 200 210 210 {
-lab=V_fout}
+N 300 30 300 110 {
+lab=#net7}
+N 280 30 300 30 {
+lab=#net7}
+N 280 50 280 190 {
+lab=#net4}
+N 280 190 350 190 {
+lab=#net4}
+N 280 10 300 10 {
+lab=#net1}
+N 280 -10 300 -10 {
+lab=VDD}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=V1
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
 C {madvlsi/vsource.sym} 170 300 0 0 {name=V2
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 170 330 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} 230 300 0 0 {name=V3
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 230 330 0 0 {name=l3 lab=GND}
 C {madvlsi/vsource.sym} 290 300 0 0 {name=V4
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 290 330 0 0 {name=l4 lab=GND}
 C {madvlsi/vsource.sym} 350 300 0 0 {name=V5
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 350 330 0 0 {name=l5 lab=GND}
 C {madvlsi/vsource.sym} 410 300 0 0 {name=V6
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 410 330 0 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} 50 300 0 0 {name=V0
-value=1.8}
+value=0}
 C {madvlsi/gnd.sym} 50 330 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 90 2 1 {name=p1 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 110 270 2 0 {name=p2 sig_type=std_logic lab=V1}
@@ -78,18 +74,34 @@ C {devices/lab_pin.sym} 230 270 2 0 {name=p12 sig_type=std_logic lab=V3}
 C {devices/lab_pin.sym} 290 270 2 0 {name=p13 sig_type=std_logic lab=V4}
 C {devices/lab_pin.sym} 350 270 2 0 {name=p14 sig_type=std_logic lab=V5}
 C {devices/lab_pin.sym} 410 270 2 0 {name=p16 sig_type=std_logic lab=V6}
+C {madvlsi/tt_models.sym} 510 30 0 0 {
+name=TT_MODELS
+only_toplevel=false
+value=".option wnflag=1
+.param MC_SWITCH=0.0
+.lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
+}
+C {./ladder.sym} 70 210 0 0 {name=x2}
+C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
-C {devices/lab_pin.sym} 210 210 2 1 {name=p5 sig_type=std_logic lab=V_fout}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 70 210 0 0 {name=x1}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen.sym} 150 30 0 0 {name=x2}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/FVF-1.sym} 80 180 0 0 {name=x3}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/VGen.sym} 440 160 0 1 {name=x4}
-C {devices/code.sym} 480 60 0 0 {name=SPICE only_toplevel=false value="
+C {./VGen.sym} 440 160 0 1 {name=x4}
+C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Vout}
+C {madvlsi/vsource.sym} -30 300 0 0 {name=Vdd
+value=0}
+C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
+C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 300 -10 2 0 {name=p17 sig_type=std_logic lab=VDD}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 20 0 0 {name=x1}
+C {madvlsi/vsource.sym} -100 300 0 0 {name=Vout
+value=1}
+C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
+C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
+C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
 .control
   set wr_vecnames
   set wr_singlescale
   let code = 0
-  while code < 120
+  while code < 128
     if code eq 0
       let V0 = 0
     else
@@ -127,7 +139,7 @@ C {devices/code.sym} 480 60 0 0 {name=SPICE only_toplevel=false value="
     end
     save all
     op
-    wrdata ~/Documents/MP4/simulation_second\{$&run\}.txt v(V1) v(V2) v(V3) v(V4) v(V5) v(V6) v(V_fout) i(V_Ifout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_andrew.txt v(V0) v(V1) v(V2) v(V3) v(V4) v(V5) v(V6) v(Vout) i(Vout)
     if code eq 0
       set appenwrite
       set wr_vecnames = FALSE
@@ -135,10 +147,4 @@ C {devices/code.sym} 480 60 0 0 {name=SPICE only_toplevel=false value="
     let code = code + 1
   end
   quit
-.endc}
-C {devices/code.sym} 480 240 0 0 {name = GAUSSRESDEF only_toplevel=false value=".param MC_SWITCH=0.0
-.subckt gaussres pos neg
-.param nom=1k cv=0.005
-R1 pos neg \{nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom\}
-.ends"}
-C {madvlsi/ammeter3.sym} 210 190 0 1 {name=V_Ifout}
+.endc"}

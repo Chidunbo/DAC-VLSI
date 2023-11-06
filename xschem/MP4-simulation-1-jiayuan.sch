@@ -89,7 +89,7 @@ let mc_run = 10
 let run = 1
 dowhile run <= mc_run
   dc Vdd 0 1.8 0.01
-  wrdata ~/Documents/MP4/simulation_first\{$&run\}.txt v(Vout)
+  wrdata ~/Documents/MP4/simulation_first\{$&run\}.txt i(Vout)
   reset
   let run = run + 1
  end
