@@ -26,17 +26,17 @@ lab=GND}
 N 110 -30 110 30 {
 lab=GND}
 N -200 -230 -200 -220 {
-lab=#net3}
+lab=VP}
 N -200 -230 210 -230 {
-lab=#net3}
+lab=VP}
 N 210 -230 210 -220 {
-lab=#net3}
+lab=VP}
 N 110 -230 110 -220 {
-lab=#net3}
+lab=VP}
 N 20 -230 20 -220 {
-lab=#net3}
+lab=VP}
 N -110 -230 -110 -220 {
-lab=#net3}
+lab=VP}
 N -200 40 110 40 {
 lab=GND}
 N -200 40 -200 50 {
@@ -223,4 +223,4 @@ C {madvlsi/gnd.sym} -200 50 0 0 {name=l2 lab=GND}
 C {devices/opin.sym} 220 -150 0 0 {name=p1 lab=Iin}
 C {devices/opin.sym} 280 -190 0 0 {name=p2 lab=Vbp}
 C {devices/opin.sym} 130 -100 0 0 {name=p3 lab=Vbn}
-C {madvlsi/vdd.sym} -200 -230 0 0 {name=l1 lab=VDD}
+C {devices/iopin.sym} -200 -230 2 0 {name=p4 lab=VP}
