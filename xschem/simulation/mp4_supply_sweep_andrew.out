@@ -1,0 +1,41 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/madvlsi/documents/dac-vlsi/xschem/mp4_supply_sweep_andrew.sch
+
+binary raw file "/home/madvlsi/Documents/DAC-VLSI/xschem/simulation/mp4_supply_sweep_andrew.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Note: include: has no value, DC 0 assumed
+No. of Data Columns : 298  
+Note: Starting dynamic gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   3.1623E-08 Note: One successful gmin step
+Trying gmin =   5.6234E-09 Note: One successful gmin step
+Trying gmin =   5.6234E-10 Note: One successful gmin step
+Trying gmin =   5.6234E-11 Note: One successful gmin step
+Trying gmin =   5.6234E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 181
+
+Total analysis time (seconds) = 0.043
+
+Total elapsed time (seconds) = 6.449 
+
+Total DRAM available = 15586.699 MB.
+DRAM currently available = 6992.664 MB.
+Maximum ngspice program size =  349.395 MB.
+Current ngspice program size =  331.652 MB.
+
+Shared ngspice pages =   10.375 MB.
+Text (code) pages =    5.449 MB.
+Stack = 0 bytes.
+Library pages =  329.457 MB.
+

@@ -1,0 +1,41 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/madvlsi/documents/dac-vlsi/xschem/test_cur_gen.sch
+
+binary raw file "/home/madvlsi/Documents/DAC-VLSI/xschem/simulation/test_cur_gen.raw"
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Note: include: has no value, DC 0 assumed
+No. of Data Columns : 42  
+Note: Starting dynamic gmin stepping
+Trying gmin =   1.0000E-03 Note: One successful gmin step
+Trying gmin =   1.0000E-04 Note: One successful gmin step
+Trying gmin =   1.0000E-05 Note: One successful gmin step
+Trying gmin =   1.0000E-06 Note: One successful gmin step
+Trying gmin =   1.0000E-07 Note: One successful gmin step
+Trying gmin =   1.0000E-08 Note: One successful gmin step
+Trying gmin =   1.0000E-09 Note: One successful gmin step
+Trying gmin =   1.0000E-10 Note: One successful gmin step
+Trying gmin =   1.0000E-11 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Trying gmin =   1.0000E-12 Note: One successful gmin step
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 181
+
+Total analysis time (seconds) = 0.005
+
+Total elapsed time (seconds) = 5.653 
+
+Total DRAM available = 15586.699 MB.
+DRAM currently available = 5743.406 MB.
+Maximum ngspice program size =  349.121 MB.
+Current ngspice program size =  331.004 MB.
+
+Shared ngspice pages =   10.125 MB.
+Text (code) pages =    5.449 MB.
+Stack = 0 bytes.
+Library pages =  329.184 MB.
+

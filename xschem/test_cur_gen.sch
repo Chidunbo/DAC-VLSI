@@ -76,7 +76,7 @@ lab=VP}
 N 210 -200 210 -190 {
 lab=VP}
 C {madvlsi/nmos3.sym} 110 -30 0 0 {name=M1
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -91,7 +91,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 20 -30 2 0 {name=M2
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -106,7 +106,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -110 -30 0 0 {name=M3
-L=0.5
+L=4
 W=12
 body=GND
 nf=1
@@ -121,7 +121,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -200 -30 2 0 {name=M4
-L=0.5
+L=4
 W=96
 body=GND
 nf=1
@@ -136,7 +136,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 20 -160 0 0 {name=M5
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -151,7 +151,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -110 -160 2 0 {name=M6
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -166,7 +166,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -200 -160 2 0 {name=M7
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -181,7 +181,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 110 -160 0 0 {name=M8
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
@@ -214,7 +214,7 @@ value=".option wnflag=1
 C {devices/lab_pin.sym} 60 -110 2 0 {name=p1 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 110 -70 2 0 {name=p2 sig_type=std_logic lab=Vbn}
 C {madvlsi/pmos3.sym} 210 -160 0 0 {name=M9
-L=0.5
+L=4
 W=12
 body=VDD
 nf=1
