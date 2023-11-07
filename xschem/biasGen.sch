@@ -27,16 +27,14 @@ N 110 -30 110 30 {
 lab=GND}
 N -200 -230 -200 -220 {
 lab=#net3}
-N -200 -230 210 -230 {
-lab=#net3}
 N 210 -230 210 -220 {
-lab=#net3}
+lab=#net4}
 N 110 -230 110 -220 {
-lab=#net3}
+lab=#net5}
 N 20 -230 20 -220 {
-lab=#net3}
+lab=#net6}
 N -110 -230 -110 -220 {
-lab=#net3}
+lab=#net7}
 N -200 40 110 40 {
 lab=GND}
 N -200 40 -200 50 {
@@ -81,9 +79,39 @@ N 70 -100 110 -100 {
 lab=Vbn}
 N 110 -100 130 -100 {
 lab=Vbn}
+N -80 -260 -10 -260 {
+lab=#net1}
+N -70 -260 -70 -190 {
+lab=#net1}
+N -200 -300 -200 -290 {
+lab=VDD}
+N -200 -300 210 -300 {
+lab=VDD}
+N 210 -300 210 -290 {
+lab=VDD}
+N 110 -300 110 -290 {
+lab=VDD}
+N 20 -310 20 -300 {
+lab=VDD}
+N 20 -300 20 -290 {
+lab=VDD}
+N -110 -300 -110 -290 {
+lab=VDD}
+N -170 -260 -160 -260 {
+lab=Vbp}
+N -160 -280 -160 -260 {
+lab=Vbp}
+N -160 -280 70 -280 {
+lab=Vbp}
+N 70 -280 70 -260 {
+lab=Vbp}
+N 70 -260 180 -260 {
+lab=Vbp}
+N 180 -260 280 -260 {
+lab=Vbp}
 C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
-L=0.15
-W=1
+L=4
+W=12
 body=GND
 nf=1
 mult=1
@@ -97,8 +125,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 20 -60 2 0 {name=M2
-L=0.15
-W=1
+L=4
+W=12
 body=GND
 nf=1
 mult=1
@@ -112,8 +140,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -110 -60 0 0 {name=M3
-L=0.15
-W=1
+L=4
+W=12
 body=GND
 nf=1
 mult=1
@@ -127,8 +155,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -200 -60 2 0 {name=M4
-L=0.15
-W=8
+L=4
+W=96
 body=GND
 nf=1
 mult=1
@@ -142,8 +170,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 20 -190 0 0 {name=M5
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -157,8 +185,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -110 -190 2 0 {name=M6
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -172,8 +200,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -200 -190 2 0 {name=M7
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -187,8 +215,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 110 -190 0 0 {name=M8
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -205,8 +233,8 @@ C {madvlsi/resistor.sym} -200 0 0 0 {name=R1
 value=100k
 m=1}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -223,4 +251,80 @@ C {madvlsi/gnd.sym} -200 50 0 0 {name=l2 lab=GND}
 C {devices/opin.sym} 220 -150 0 0 {name=p1 lab=Iin}
 C {devices/opin.sym} 280 -190 0 0 {name=p2 lab=Vbp}
 C {devices/opin.sym} 130 -100 0 0 {name=p3 lab=Vbn}
-C {madvlsi/vdd.sym} -200 -230 0 0 {name=l1 lab=VDD}
+C {madvlsi/pmos3.sym} -200 -260 0 1 {name=M10
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} -110 -260 0 1 {name=M11
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/vdd.sym} 20 -310 0 0 {name=l3 lab=VDD}
+C {madvlsi/pmos3.sym} 20 -260 0 0 {name=M12
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 110 -260 0 0 {name=M13
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {madvlsi/pmos3.sym} 210 -260 0 0 {name=M14
+L=4
+W=12
+body=VDD
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/ipin.sym} 280 -260 0 1 {name=p4 lab=Vcp}

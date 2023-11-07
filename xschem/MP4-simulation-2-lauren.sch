@@ -40,6 +40,10 @@ N 200 130 210 130 {
 lab=#net7}
 N 200 150 210 150 {
 lab=#net8}
+N 300 -10 350 -10 {
+lab=#net2}
+N 350 -10 350 150 {
+lab=#net2}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
 C {madvlsi/gnd.sym} 170 330 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} 230 330 0 0 {name=l3 lab=GND}
