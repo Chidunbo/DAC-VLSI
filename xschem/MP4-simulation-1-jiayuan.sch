@@ -81,19 +81,8 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value=".control
-set wr_vecnames
-set wr_singlescale
-
-let mc_run = 10
-let run = 1
-dowhile run <= mc_run
-  dc Vdd 0 1.8 0.01
-  wrdata ~/Documents/MP4/simulation_first\{$&run\}.txt i(Vout)
-  reset
-  let run = run + 1
- end
-.endc"}
+C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value=".dc Vout 0 1.8 0.01
+.save all"}
 C {./ladder.sym} 70 210 0 0 {name=x2}
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
