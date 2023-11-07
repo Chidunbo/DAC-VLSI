@@ -81,26 +81,21 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value=".control
-set wr_vecnames
-set wr_singlescale
-
-dc Vdd 0 1.8 0.01
-wrdata ~/Documents/DAC-VLSI/simulation_results/supply_sweep.txt v(Vdd) i(Vout)
-
-.endc"}
+C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value="
+.dc Vout 0 1.8 0.01
+.save all"}
 C {./ladder.sym} 70 210 0 0 {name=x2}
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
 C {./VGen.sym} 440 160 0 1 {name=x4}
-C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=VOut}
 C {madvlsi/vsource.sym} -30 300 0 0 {name=Vdd
-value=0}
+value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 300 -10 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 20 0 0 {name=x1}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=Vout
-value=1}
+value=0}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
-C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=VOut}
