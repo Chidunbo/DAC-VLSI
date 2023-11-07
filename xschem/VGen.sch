@@ -92,10 +92,11 @@ N 40 -30 150 -30 {
 lab=#net1}
 N 150 -40 150 -30 {
 lab=#net1}
-N 70 -210 120 -210 {}
+N 70 -210 120 -210 {
+lab=Vbp}
 C {madvlsi/nmos3.sym} 40 -70 0 0 {name=M5
 L=0.5
-W=24
+W=12
 body=GND
 nf=1
 mult=1
@@ -140,7 +141,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 40 -210 2 0 {name=M1
 L=0.5
-W=6
+W=12
 body=VDD
 nf=1
 mult=1
@@ -170,7 +171,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 -70 0 0 {name=M9
 L=0.5
-W=24
+W=12
 body=VDD
 nf=1
 mult=1
@@ -215,7 +216,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 360 30 2 0 {name=M12
 L=0.5
-W=6
+W=12
 body=GND
 nf=1
 mult=1

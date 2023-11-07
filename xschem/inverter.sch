@@ -19,13 +19,14 @@ N 80 -20 110 -20 {
 lab=Y}
 N 80 50 80 60 {
 lab=GND}
-N 80 -100 80 -90 {}
+N 80 -100 80 -90 {
+lab=VDD}
 C {devices/ipin.sym} 10 -20 0 0 {name=p1 lab=A
 }
 C {devices/opin.sym} 110 -20 0 0 {name=p2 lab=Y}
 C {madvlsi/pmos3.sym} 80 -60 0 0 {name=M1
-L=0.15
-W=1
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -39,8 +40,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 80 20 0 0 {name=M2
-L=0.15
-W=1
+L=4
+W=12
 body=GND
 nf=1
 mult=1
