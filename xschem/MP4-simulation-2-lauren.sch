@@ -57,10 +57,10 @@ C {devices/lab_pin.sym} 290 270 2 0 {name=p13 sig_type=std_logic lab=b4}
 C {devices/lab_pin.sym} 350 270 2 0 {name=p14 sig_type=std_logic lab=b5}
 C {devices/lab_pin.sym} 410 270 2 0 {name=p16 sig_type=std_logic lab=b6}
 C {devices/lab_pin.sym} 210 230 2 0 {name=p5 sig_type=std_logic lab=Vfout}
-C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 150 30 0 0 {name=x1}
-C {/home/madvlsi/DAC-VLSI/xschem/ladder.sym} 30 210 0 0 {name=x2}
-C {/home/madvlsi/DAC-VLSI/xschem/VGen.sym} 440 160 0 1 {name=x3}
-C {/home/madvlsi/DAC-VLSI/xschem/FVF-1.sym} 460 180 0 1 {name=x4}
+C {./biasGen.sym} 150 30 0 0 {name=x1}
+C {./ladder.sym} 30 210 0 0 {name=x2}
+C {./VGen.sym} 440 160 0 1 {name=x3}
+C {./FVF-1.sym} 460 180 0 1 {name=x4}
 C {devices/lab_pin.sym} 30 70 2 1 {name=p1 sig_type=std_logic lab=b0}
 C {devices/lab_pin.sym} 30 90 2 1 {name=p3 sig_type=std_logic lab=b1}
 C {devices/lab_pin.sym} 30 110 2 1 {name=p4 sig_type=std_logic lab=b2}

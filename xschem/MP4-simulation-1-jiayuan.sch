@@ -104,7 +104,7 @@ value=0}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 300 -10 2 0 {name=p17 sig_type=std_logic lab=VDD}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 20 0 0 {name=x1}
+C {./biasGen-j.sym} 130 20 0 0 {name=x1}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=Vout
 value=0}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
