@@ -76,8 +76,13 @@ lab=VP}
 N 210 -200 210 -190 {
 lab=VP}
 C {madvlsi/nmos3.sym} 110 -30 0 0 {name=M1
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=GND
 nf=1
 mult=1
@@ -91,8 +96,13 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 20 -30 2 0 {name=M2
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=GND
 nf=1
 mult=1
@@ -106,8 +116,13 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -110 -30 0 0 {name=M3
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=GND
 nf=1
 mult=1
@@ -121,11 +136,16 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -200 -30 2 0 {name=M4
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=96
+>>>>>>> refs/remotes/origin/main
 body=GND
 nf=1
-mult=1
+mult=8
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -136,8 +156,13 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 20 -160 0 0 {name=M5
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=VDD
 nf=1
 mult=1
@@ -151,8 +176,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -110 -160 2 0 {name=M6
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=VDD
 nf=1
 mult=1
@@ -166,8 +196,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -200 -160 2 0 {name=M7
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=VDD
 nf=1
 mult=1
@@ -181,8 +216,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 110 -160 0 0 {name=M8
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=VDD
 nf=1
 mult=1
@@ -196,7 +236,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 30 0 0 {name=R1
-value=100K
+value=10K
 m=1}
 C {madvlsi/vsource.sym} 390 -40 0 0 {name=VP
 value=1.8}
@@ -214,8 +254,13 @@ value=".option wnflag=1
 C {devices/lab_pin.sym} 60 -110 2 0 {name=p1 sig_type=std_logic lab=Vbp}
 C {devices/lab_pin.sym} 110 -70 2 0 {name=p2 sig_type=std_logic lab=Vbn}
 C {madvlsi/pmos3.sym} 210 -160 0 0 {name=M9
+<<<<<<< HEAD
+L=\{L\}
+W=\{W\}
+=======
 L=4
 W=12
+>>>>>>> refs/remotes/origin/main
 body=VDD
 nf=1
 mult=1
@@ -229,7 +274,9 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ammeter.sym} 210 -100 0 0 {name=Vmeas}
-C {devices/code_shown.sym} 440 0 0 0 {name=s1 only_toplevel=false value=".dc Vout 0 1.8 0.01
+C {devices/code_shown.sym} 440 0 0 0 {name=s1 only_toplevel=false value="
+.param W=24 L=4
+.dc Vout 0 1.8 0.01
 .save all"}
 C {madvlsi/vsource.sym} 310 -40 0 0 {name=Vout
 value=1.8}
