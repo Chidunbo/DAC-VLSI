@@ -40,25 +40,25 @@ N 280 10 300 10 {
 lab=#net1}
 N 280 -10 300 -10 {
 lab=VDD}
-C {madvlsi/vsource.sym} 110 300 0 0 {name=v1
+C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
-C {madvlsi/vsource.sym} 170 300 0 0 {name=v2
+C {madvlsi/vsource.sym} 170 300 0 0 {name=Vb2
 value=0}
 C {madvlsi/gnd.sym} 170 330 0 0 {name=l2 lab=GND}
-C {madvlsi/vsource.sym} 230 300 0 0 {name=v3
+C {madvlsi/vsource.sym} 230 300 0 0 {name=Vb3
 value=0}
 C {madvlsi/gnd.sym} 230 330 0 0 {name=l3 lab=GND}
-C {madvlsi/vsource.sym} 290 300 0 0 {name=v4
+C {madvlsi/vsource.sym} 290 300 0 0 {name=Vb4
 value=0}
 C {madvlsi/gnd.sym} 290 330 0 0 {name=l4 lab=GND}
-C {madvlsi/vsource.sym} 350 300 0 0 {name=v5
+C {madvlsi/vsource.sym} 350 300 0 0 {name=Vb5
 value=0}
 C {madvlsi/gnd.sym} 350 330 0 0 {name=l5 lab=GND}
-C {madvlsi/vsource.sym} 410 300 0 0 {name=v6
+C {madvlsi/vsource.sym} 410 300 0 0 {name=Vb6
 value=0}
 C {madvlsi/gnd.sym} 410 330 0 0 {name=l6 lab=GND}
-C {madvlsi/vsource.sym} 50 300 0 0 {name=v0
+C {madvlsi/vsource.sym} 50 300 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 50 330 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 90 2 1 {name=p1 sig_type=std_logic lab=V1}
@@ -101,45 +101,52 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
   set wr_vecnames
   set wr_singlescale
   let code = 0
-  while code < 128
+  while code < 120
     if code eq 0
-      let v0 = 0
+      let b0 = 0
     else
-      let v0 = code % 2
+      let b0 = code % 2
     end
     if floor(code / 2) eq 0
-      let v1 = 0
+      let b1 = 0
     else
-      let v1 = floor(code / 2) % 2
+      let b1 = floor(code / 2) % 2
     end
     if floor(code / 4) eq 0
-      let v2 = 0
+      let b2 = 0
     else
-      let v2 = floor(code / 4) % 2
+      let b2 = floor(code / 4) % 2
     end
     if floor(code / 8) eq 0
-      let v3 = 0
+      let b3 = 0
     else
-      let v3 = floor(code / 8) % 2
+      let b3 = floor(code / 8) % 2
     end
     if floor(code / 16) eq 0
-      let v4 = 0
+      let b4 = 0
     else
-      let v4 = floor(code / 16) % 2
+      let b4 = floor(code / 16) % 2
     end
     if floor(code / 32) eq 0
-      let v5 = 0
+      let b5 = 0
     else
-      let v5 = floor(code / 32) % 2
+      let b5 = floor(code / 32) % 2
     end
     if floor(code / 64) eq 0
-      let v6 = 0
+      let b6 = 0
     else
-      let v6 = floor(code / 64) % 2
+      let b6 = floor(code / 64) % 2
     end
+    alter Vb0 1.8*$&b0
+    alter Vb1 1.8*$&b1
+    alter Vb2 1.8*$&b2
+    alter Vb3 1.8*$&b3
+    alter Vb4 1.8*$&b4
+    alter Vb5 1.8*$&b5
+    alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_andrew.txt v(V0) v(V1) v(V2) v(V3) v(V4) v(V5) v(V6) v(Vout) i(Vout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_andrew.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Vout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
