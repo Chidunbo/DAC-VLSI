@@ -126,43 +126,50 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
   let code = 0
    while code < 128
     if code eq 0
-      let V0 = 0
+      let b0 = 0
     else
-      let V0 = code % 2
+      let b0 = code % 2
     end
     if floor(code / 2) eq 0
-      let V1 = 0
+      let b1 = 0
     else
-      let V1 = floor(code / 2) % 2
+      let b1 = floor(code / 2) % 2
     end
     if floor(code / 4) eq 0
-      let V2 = 0
+      let b2 = 0
     else
-      let V2 = floor(code / 4) % 2
+      let b2 = floor(code / 4) % 2
     end
     if floor(code / 8) eq 0
-      let V3 = 0
+      let b3 = 0
     else
-      let V3 = floor(code / 8) % 2
+      let b3 = floor(code / 8) % 2
     end
     if floor(code / 16) eq 0
-      let V4 = 0
+      let b4 = 0
     else
-      let V4 = floor(code / 16) % 2
+      let b4 = floor(code / 16) % 2
     end
     if floor(code / 32) eq 0
-      let V5 = 0
+      let b5 = 0
     else
-      let V5 = floor(code / 32) % 2
+      let b5 = floor(code / 32) % 2
     end
     if floor(code / 64) eq 0
-      let V6 = 0
+      let b6 = 0
     else
-      let V6 = floor(code / 64) % 2
+      let b6 = floor(code / 64) % 2
     end
+    alter Vb0 1.8*$&b0
+    alter Vb1 1.8*$&b1
+    alter Vb2 1.8*$&b2
+    alter Vb3 1.8*$&b3
+    alter Vb4 1.8*$&b4
+    alter Vb5 1.8*$&b5
+    alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_2_\{$&run\}.txt v(V1) v(V2) v(V3) v(V4) v(V5) v(V6) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_1_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
