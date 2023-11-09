@@ -16,49 +16,69 @@ N 330 150 360 150 {
 lab=#net2}
 N 330 170 360 170 {
 lab=#net3}
-N 300 10 340 10 {
-lab=#net1}
 N 340 10 340 130 {
 lab=#net1}
 N 350 190 360 190 {
 lab=#net4}
-N 180 130 210 130 {
-lab=#net5}
-N 180 150 210 150 {
-lab=#net6}
-N 180 110 300 110 {
-lab=#net7}
-N 300 30 300 110 {
-lab=#net7}
-N 280 30 300 30 {
-lab=#net7}
 N 280 50 280 190 {
 lab=#net4}
 N 280 190 350 190 {
 lab=#net4}
-N 280 10 300 10 {
-lab=#net1}
-N 280 -10 300 -10 {
+N 280 -60 300 -60 {
 lab=VDD}
-C {madvlsi/vsource.sym} 110 300 0 0 {name=V1
+N 210 170 210 190 {
+lab=#net5}
+N 210 200 210 220 {
+lab=Vout}
+N 280 20 280 50 {
+lab=#net4}
+N 300 0 300 30 {
+lab=#net6}
+N 340 -20 340 10 {
+lab=#net1}
+N 280 -40 340 -40 {
+lab=#net1}
+N 340 -40 340 -20 {
+lab=#net1}
+N 280 -20 300 -20 {
+lab=#net6}
+N 300 -20 300 -0 {
+lab=#net6}
+N 280 -0 280 20 {
+lab=#net4}
+N 190 90 300 90 {
+lab=#net6}
+N 300 30 300 90 {
+lab=#net6}
+N 190 130 210 130 {
+lab=#net7}
+N 190 110 200 110 {
+lab=#net8}
+N 200 110 200 150 {
+lab=#net8}
+N 200 150 210 150 {
+lab=#net8}
+N 130 30 130 40 {
+lab=VDD}
+C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
-C {madvlsi/vsource.sym} 170 300 0 0 {name=V2
+C {madvlsi/vsource.sym} 170 300 0 0 {name=Vb2
 value=0}
 C {madvlsi/gnd.sym} 170 330 0 0 {name=l2 lab=GND}
-C {madvlsi/vsource.sym} 230 300 0 0 {name=V3
+C {madvlsi/vsource.sym} 230 300 0 0 {name=Vb3
 value=0}
 C {madvlsi/gnd.sym} 230 330 0 0 {name=l3 lab=GND}
-C {madvlsi/vsource.sym} 290 300 0 0 {name=V4
+C {madvlsi/vsource.sym} 290 300 0 0 {name=Vb4
 value=0}
 C {madvlsi/gnd.sym} 290 330 0 0 {name=l4 lab=GND}
-C {madvlsi/vsource.sym} 350 300 0 0 {name=V5
+C {madvlsi/vsource.sym} 350 300 0 0 {name=Vb5
 value=1.8}
 C {madvlsi/gnd.sym} 350 330 0 0 {name=l5 lab=GND}
-C {madvlsi/vsource.sym} 410 300 0 0 {name=V6
+C {madvlsi/vsource.sym} 410 300 0 0 {name=Vb6
 value=1.8}
 C {madvlsi/gnd.sym} 410 330 0 0 {name=l6 lab=GND}
-C {madvlsi/vsource.sym} 50 300 0 0 {name=V0
+C {madvlsi/vsource.sym} 50 300 0 0 {name=Vb0
 value=0}
 C {madvlsi/gnd.sym} 50 330 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 70 90 2 1 {name=p1 sig_type=std_logic lab=V1}
@@ -81,21 +101,26 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 520 200 0 0 {name=s1 only_toplevel=false value="
-.dc Vout 0 1.8 0.01
-.save all"}
-C {./ladder.sym} 70 210 0 0 {name=x2}
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
 C {./VGen.sym} 440 160 0 1 {name=x4}
-C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=VOut}
-C {madvlsi/vsource.sym} -30 300 0 0 {name=Vdd
+C {devices/lab_pin.sym} 210 220 2 1 {name=p5 sig_type=std_logic lab=Vout}
+C {madvlsi/vsource.sym} -30 300 0 0 {name=vdd
 value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 300 -10 2 0 {name=p17 sig_type=std_logic lab=VDD}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 20 0 0 {name=x1}
-C {madvlsi/vsource.sym} -100 300 0 0 {name=Vout
-value=0}
+C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 -30 0 0 {name=x1}
+C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
+value=0.8}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
-C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=VOut}
+C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
+C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
+C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}
+C {devices/code_shown.sym} 520 200 0 0 {name=SPICE only_toplevel=false value="
+LT = 4
+WT = 12
+
+.dc vout 0 1.8 0.001
+.save all"}

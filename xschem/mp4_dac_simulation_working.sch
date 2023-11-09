@@ -176,4 +176,4 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
 .endc"}
 C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder_no_mirror.sym} 220 140 0 0 {name=x2}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}
