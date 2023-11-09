@@ -171,7 +171,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_1_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_3_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE

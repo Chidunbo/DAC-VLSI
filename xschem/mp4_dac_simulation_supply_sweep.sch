@@ -119,8 +119,5 @@ C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}
 C {devices/code_shown.sym} 520 200 0 0 {name=SPICE only_toplevel=false value="
-LT = 4
-WT = 12
-
 .dc vout 0 1.8 0.001
 .save all"}
