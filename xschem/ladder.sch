@@ -274,11 +274,11 @@ lab=#net2}
 N 1640 120 1660 120 {
 lab=#net5}
 N 1610 150 1610 160 {
-lab=#net24}
+lab=VN}
 N 1610 160 1690 160 {
-lab=#net24}
+lab=VN}
 N 1650 160 1650 170 {
-lab=#net24}
+lab=VN}
 N 1610 320 1610 330 {
 lab=VN}
 N 1610 330 1700 330 {
@@ -288,7 +288,7 @@ lab=VN}
 N 1660 330 1660 340 {
 lab=VN}
 N 1690 70 1690 90 {
-lab=#net25}
+lab=#net24}
 N 1660 250 1660 290 {
 lab=#net2}
 N 1610 70 1610 90 {
@@ -298,29 +298,29 @@ lab=#net2}
 N 1770 70 1770 90 {
 lab=Idump}
 N 1720 40 1740 40 {
-lab=#net25}
+lab=#net24}
 N 1730 40 1730 80 {
-lab=#net25}
+lab=#net24}
 N 1610 70 1650 70 {
 lab=#net5}
 N 1650 70 1650 120 {
 lab=#net5}
 N 1690 80 1730 80 {
-lab=#net25}
+lab=#net24}
 N 1610 250 1660 250 {
 lab=#net2}
 N 1690 150 1690 160 {
-lab=#net24}
+lab=VN}
 N 1700 240 1700 260 {
-lab=#net26}
+lab=#net25}
 N 1780 240 1780 260 {
-lab=xxx}
+lab=Iout}
 N 1730 210 1750 210 {
-lab=#net26}
+lab=#net25}
 N 1740 210 1740 250 {
-lab=#net26}
+lab=#net25}
 N 1700 250 1740 250 {
-lab=#net26}
+lab=#net25}
 N 1510 170 1610 170 {
 lab=#net2}
 N 1610 170 1610 250 {
@@ -346,9 +346,13 @@ lab=VP}
 N 1700 180 1780 180 {
 lab=VP}
 N 1780 260 1780 280 {
-lab=xxx}
+lab=Iout}
 N 1650 170 1760 170 {
-lab=#net24}
+lab=VN}
+N 1760 170 1760 330 {
+lab=VN}
+N 1700 330 1760 330 {
+lab=VN}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
 L=4
 W=12
