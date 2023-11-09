@@ -351,7 +351,8 @@ N 130 -90 180 -90 {
 lab=GND}
 N 130 -90 130 -70 {
 lab=GND}
-N 1770 70 1800 70 {}
+N 1770 70 1800 70 {
+lab=#net28}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
 L=4
 W=12
@@ -1018,7 +1019,7 @@ C {devices/code.sym} 1660 470 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_dac_simulation_andrew.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Iout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_dac_simulation_andrew.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -1035,5 +1036,19 @@ C {devices/lab_pin.sym} 1800 130 2 0 {name=p2 sig_type=std_logic lab=Vdump}
 C {devices/lab_pin.sym} 1780 340 3 0 {name=p12 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} 1950 40 2 0 {name=p17 sig_type=std_logic lab=Vdump}
 C {devices/lab_pin.sym} 1950 230 2 0 {name=p18 sig_type=std_logic lab=Vout}
-C {devices/ammeter.sym} 1800 100 0 0 {name=Vmeas}
-C {devices/ammeter.sym} 1780 310 0 0 {name=Iout}
+C {devices/ammeter.sym} 1800 100 0 0 {name=Idump}
+C {devices/ammeter.sym} 1780 310 0 0 {name=Viout}
+C {madvlsi/vdd.sym} 280 265 0 0 {name=l16 lab=VDD}
+C {madvlsi/vdd.sym} 450 265 0 0 {name=l17 lab=VDD}
+C {madvlsi/vdd.sym} 620 265 0 0 {name=l18 lab=VDD}
+C {madvlsi/vdd.sym} 790 265 0 0 {name=l19 lab=VDD}
+C {madvlsi/vdd.sym} 960 265 0 0 {name=l20 lab=VDD}
+C {madvlsi/vdd.sym} 1130 265 0 0 {name=l21 lab=VDD}
+C {madvlsi/vdd.sym} 1300 265 0 0 {name=l22 lab=VDD}
+C {madvlsi/gnd.sym} 280 395 0 0 {name=l23 lab=GND}
+C {madvlsi/gnd.sym} 450 395 0 0 {name=l24 lab=GND}
+C {madvlsi/gnd.sym} 620 395 0 0 {name=l25 lab=GND}
+C {madvlsi/gnd.sym} 790 395 0 0 {name=l26 lab=GND}
+C {madvlsi/gnd.sym} 960 395 0 0 {name=l27 lab=GND}
+C {madvlsi/gnd.sym} 1130 395 0 0 {name=l28 lab=GND}
+C {madvlsi/gnd.sym} 1300 395 0 0 {name=l29 lab=GND}

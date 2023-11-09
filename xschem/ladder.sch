@@ -285,8 +285,6 @@ N 1610 330 1700 330 {
 lab=VN}
 N 1700 320 1700 330 {
 lab=VN}
-N 1660 330 1660 340 {
-lab=VN}
 N 1690 70 1690 90 {
 lab=#net24}
 N 1660 250 1660 290 {
@@ -352,6 +350,14 @@ lab=VN}
 N 1760 170 1760 330 {
 lab=VN}
 N 1700 330 1760 330 {
+lab=VN}
+N 105 265 1300 265 {
+lab=VP}
+N 105 0 105 265 {
+lab=VP}
+N 280 395 1660 395 {
+lab=VN}
+N 1660 330 1660 410 {
 lab=VN}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
 L=4
@@ -924,6 +930,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 1660 340 1 0 {name=p1 lab=VN}
 C {devices/opin.sym} 1780 280 0 0 {name=p2 lab=Iout}
 C {devices/opin.sym} 1770 90 0 0 {name=p12 lab=Idump}
+C {devices/iopin.sym} 1660 410 0 0 {name=p1 lab=VN}
