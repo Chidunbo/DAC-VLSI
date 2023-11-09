@@ -174,47 +174,47 @@ lab=VP}
 N 190 0 210 -0 {
 lab=VP}
 N 210 70 210 320 {
-lab=V0}
+lab=V6}
 N 380 70 380 320 {
-lab=V1}
+lab=V5}
 N 550 70 550 310 {
-lab=V2}
+lab=V4}
 N 550 310 550 320 {
-lab=V2}
+lab=V4}
 N 720 70 720 320 {
 lab=V3}
 N 890 70 890 320 {
-lab=V4}
+lab=V2}
 N 1060 70 1060 320 {
-lab=V5}
+lab=V1}
 N 1230 70 1230 320 {
-lab=V6}
+lab=V0}
 N 180 0 190 0 {
 lab=VP}
 N 720 -0 1400 0 {
 lab=VP}
 N 210 320 210 490 {
-lab=V0}
+lab=V6}
 N 380 320 380 490 {
-lab=V1}
+lab=V5}
 N 550 320 550 490 {
-lab=V2}
+lab=V4}
 N 720 320 720 490 {
 lab=V3}
 N 890 320 890 480 {
-lab=V4}
+lab=V2}
 N 1060 320 1060 480 {
-lab=V5}
+lab=V1}
 N 1230 320 1230 480 {
-lab=V6}
+lab=V0}
 N 1260 170 1450 170 {
 lab=#net2}
 N 890 480 890 490 {
-lab=V4}
+lab=V2}
 N 1060 480 1060 500 {
-lab=V5}
+lab=V1}
 N 1230 480 1230 500 {
-lab=V6}
+lab=V0}
 N 290 70 290 210 {
 lab=#net17}
 N 290 210 360 210 {
@@ -794,13 +794,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 210 490 1 1 {name=p4 lab=V0}
-C {devices/ipin.sym} 380 490 3 0 {name=p6 lab=V1}
-C {devices/ipin.sym} 550 490 3 0 {name=p7 lab=V2}
+C {devices/ipin.sym} 210 490 1 1 {name=p4 lab=V6}
+C {devices/ipin.sym} 380 490 3 0 {name=p6 lab=V5}
+C {devices/ipin.sym} 550 490 3 0 {name=p7 lab=V4}
 C {devices/ipin.sym} 720 490 3 0 {name=p8 lab=V3}
-C {devices/ipin.sym} 890 490 3 0 {name=p9 lab=V4}
-C {devices/ipin.sym} 1060 500 3 0 {name=p10 lab=V5}
-C {devices/ipin.sym} 1230 500 3 0 {name=p11 lab=V6}
+C {devices/ipin.sym} 890 490 3 0 {name=p9 lab=V2}
+C {devices/ipin.sym} 1060 500 3 0 {name=p10 lab=V1}
+C {devices/ipin.sym} 1230 500 3 0 {name=p11 lab=V0}
 C {./inverter.sym} 320 330 0 0 {name=x1}
 C {./inverter.sym} 490 330 0 0 {name=x2}
 C {./inverter.sym} 660 330 0 0 {name=x3}
