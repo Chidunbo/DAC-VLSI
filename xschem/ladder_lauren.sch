@@ -10,163 +10,163 @@ lab=#net1}
 N 410 20 410 30 {
 lab=#net2}
 N 410 100 410 120 {
-lab=#net3}
+lab=Vout}
 N 490 100 490 120 {
-lab=#net4}
+lab=Vout}
 N 410 30 490 30 {
 lab=#net2}
 N 240 100 240 120 {
-lab=#net5}
+lab=#net3}
 N 320 100 320 120 {
-lab=#net4}
+lab=Vout}
 N 540 -40 580 -40 {
-lab=#net6}
+lab=#net4}
 N 580 20 580 30 {
-lab=#net7}
-N 580 100 580 120 {
-lab=#net3}
-N 660 100 660 120 {
-lab=#net4}
-N 580 30 660 30 {
-lab=#net7}
-N 710 -40 750 -40 {
-lab=#net8}
-N 750 20 750 30 {
-lab=#net9}
-N 750 100 750 120 {
-lab=#net3}
-N 830 100 830 120 {
-lab=#net4}
-N 750 30 830 30 {
-lab=#net9}
-N 880 -40 920 -40 {
-lab=#net10}
-N 920 20 920 30 {
-lab=#net11}
-N 920 100 920 120 {
-lab=#net3}
-N 1000 100 1000 120 {
-lab=#net4}
-N 920 30 1000 30 {
-lab=#net11}
-N 1050 -40 1090 -40 {
-lab=#net12}
-N 1090 20 1090 30 {
-lab=#net13}
-N 1090 100 1090 120 {
-lab=#net3}
-N 1170 100 1170 120 {
-lab=#net4}
-N 1090 30 1170 30 {
-lab=#net13}
-N 1220 -40 1260 -40 {
-lab=#net14}
-N 1260 20 1260 30 {
-lab=#net15}
-N 1340 100 1340 120 {
-lab=#net4}
-N 1260 30 1340 30 {
-lab=#net15}
-N 1390 -40 1430 -40 {
-lab=#net16}
-N 240 120 240 170 {
 lab=#net5}
+N 580 100 580 120 {
+lab=Vout}
+N 660 100 660 120 {
+lab=Vout}
+N 580 30 660 30 {
+lab=#net5}
+N 710 -40 750 -40 {
+lab=#net6}
+N 750 20 750 30 {
+lab=#net7}
+N 750 100 750 120 {
+lab=Vout}
+N 830 100 830 120 {
+lab=Vout}
+N 750 30 830 30 {
+lab=#net7}
+N 880 -40 920 -40 {
+lab=#net8}
+N 920 20 920 30 {
+lab=#net9}
+N 920 100 920 120 {
+lab=Vout}
+N 1000 100 1000 120 {
+lab=Vout}
+N 920 30 1000 30 {
+lab=#net9}
+N 1050 -40 1090 -40 {
+lab=#net10}
+N 1090 20 1090 30 {
+lab=#net11}
+N 1090 100 1090 120 {
+lab=Vout}
+N 1170 100 1170 120 {
+lab=Vout}
+N 1090 30 1170 30 {
+lab=#net11}
+N 1220 -40 1260 -40 {
+lab=#net12}
+N 1260 20 1260 30 {
+lab=#net13}
+N 1340 100 1340 120 {
+lab=Vout}
+N 1260 30 1340 30 {
+lab=#net13}
+N 1390 -40 1430 -40 {
+lab=#net14}
+N 240 120 240 170 {
+lab=#net3}
 N 410 120 410 170 {
-lab=#net3}
+lab=Vout}
 N 410 170 580 170 {
-lab=#net3}
+lab=Vout}
 N 580 120 580 170 {
-lab=#net3}
+lab=Vout}
 N 750 120 750 170 {
-lab=#net3}
+lab=Vout}
 N 580 170 750 170 {
-lab=#net3}
+lab=Vout}
 N 920 120 920 170 {
-lab=#net3}
+lab=Vout}
 N 750 170 920 170 {
-lab=#net3}
+lab=Vout}
 N 1090 120 1090 170 {
-lab=#net3}
+lab=Vout}
 N 920 170 1090 170 {
-lab=#net3}
+lab=Vout}
 N 320 120 320 140 {
-lab=#net4}
+lab=Vout}
 N 320 140 490 140 {
-lab=#net4}
+lab=Vout}
 N 490 120 490 140 {
-lab=#net4}
+lab=Vout}
 N 490 140 660 140 {
-lab=#net4}
+lab=Vout}
 N 660 120 660 140 {
-lab=#net4}
+lab=Vout}
 N 660 140 830 140 {
-lab=#net4}
+lab=Vout}
 N 830 120 830 140 {
-lab=#net4}
+lab=Vout}
 N 1000 120 1000 140 {
-lab=#net4}
+lab=Vout}
 N 1170 120 1170 140 {
-lab=#net4}
+lab=Vout}
 N 1340 120 1340 140 {
-lab=#net4}
+lab=Vout}
 N 180 -130 240 -130 {
 lab=Vin}
 N 890 480 890 490 {
-lab=#net17}
+lab=#net15}
 N 1060 480 1060 500 {
-lab=#net18}
+lab=#net16}
 N 1230 480 1230 500 {
-lab=#net19}
+lab=#net17}
 N 290 70 290 210 {
-lab=#net20}
+lab=#net18}
 N 290 210 360 210 {
-lab=#net20}
+lab=#net18}
 N 360 210 360 330 {
-lab=#net20}
+lab=#net18}
 N 460 70 460 200 {
-lab=#net21}
+lab=#net19}
 N 460 200 460 210 {
-lab=#net21}
+lab=#net19}
 N 460 210 530 210 {
-lab=#net21}
+lab=#net19}
 N 530 210 530 330 {
-lab=#net21}
+lab=#net19}
 N 630 70 630 210 {
-lab=#net22}
+lab=#net20}
 N 630 210 700 210 {
-lab=#net22}
+lab=#net20}
 N 700 210 700 330 {
-lab=#net22}
+lab=#net20}
 N 800 70 800 210 {
-lab=#net23}
+lab=#net21}
 N 800 210 870 210 {
-lab=#net23}
+lab=#net21}
 N 870 210 870 330 {
-lab=#net23}
+lab=#net21}
 N 970 70 970 210 {
-lab=#net24}
+lab=#net22}
 N 970 210 1040 210 {
-lab=#net24}
+lab=#net22}
 N 1040 210 1040 330 {
-lab=#net24}
+lab=#net22}
 N 1140 70 1140 210 {
-lab=#net25}
+lab=#net23}
 N 1140 210 1200 210 {
-lab=#net25}
+lab=#net23}
 N 1200 210 1210 210 {
-lab=#net25}
+lab=#net23}
 N 1210 210 1210 330 {
-lab=#net25}
+lab=#net23}
 N 1310 70 1310 210 {
-lab=#net26}
+lab=#net24}
 N 1310 210 1380 210 {
-lab=#net26}
+lab=#net24}
 N 1380 210 1380 330 {
-lab=#net26}
+lab=#net24}
 N 1500 360 1530 360 {
-lab=#net3}
+lab=Vout}
 N 1500 190 1520 190 {
-lab=#net4}
+lab=Vout}
 N 200 -30 200 -10 {
 lab=VDD}
 N 1470 220 1470 230 {
@@ -190,29 +190,29 @@ lab=GND}
 N 180 -200 180 -190 {
 lab=GND}
 N 300 170 410 170 {
-lab=#net3}
+lab=Vout}
 N 240 30 320 30 {
-lab=#net27}
+lab=#net25}
 N 300 -40 310 -40 {
-lab=#net28}
+lab=#net26}
 N 240 -70 240 -40 {
-lab=#net29}
+lab=#net27}
 N 1260 160 1260 170 {
-lab=#net3}
+lab=Vout}
 N 300 -130 300 -40 {
-lab=#net28}
+lab=#net26}
 N 470 -40 480 -40 {
-lab=#net30}
+lab=#net28}
 N 640 -40 650 -40 {
-lab=#net31}
+lab=#net29}
 N 810 -40 820 -40 {
-lab=#net32}
+lab=#net30}
 N 980 -40 990 -40 {
-lab=#net33}
+lab=#net31}
 N 1150 -40 1160 -40 {
-lab=#net34}
+lab=#net32}
 N 1320 -40 1330 -40 {
-lab=#net35}
+lab=#net33}
 N 210 -10 340 -10 {
 lab=VDD}
 N 340 -10 380 -10 {
@@ -242,123 +242,123 @@ lab=VDD}
 N 1360 -10 1400 -10 {
 lab=VDD}
 N 240 20 240 30 {
-lab=#net27}
+lab=#net25}
 N 1230 70 1230 330 {
-lab=#net19}
+lab=#net17}
 N 1230 330 1230 480 {
-lab=#net19}
+lab=#net17}
 N 1060 70 1060 330 {
-lab=#net18}
+lab=#net16}
 N 1060 330 1060 480 {
-lab=#net18}
+lab=#net16}
 N 890 70 890 330 {
-lab=#net17}
+lab=#net15}
 N 890 330 890 480 {
-lab=#net17}
+lab=#net15}
 N 720 70 720 330 {
-lab=#net36}
+lab=#net34}
 N 720 330 720 490 {
-lab=#net36}
+lab=#net34}
 N 550 70 550 330 {
-lab=#net37}
+lab=#net35}
 N 550 330 550 490 {
-lab=#net37}
+lab=#net35}
 N 380 70 380 330 {
-lab=#net38}
+lab=#net36}
 N 380 330 380 490 {
-lab=#net38}
+lab=#net36}
 N 210 70 210 330 {
-lab=#net39}
+lab=#net37}
 N 210 330 210 490 {
-lab=#net39}
+lab=#net37}
 N 200 -10 210 -10 {
 lab=VDD}
 N 240 30 240 40 {
-lab=#net27}
+lab=#net25}
 N 320 30 320 40 {
-lab=#net27}
+lab=#net25}
 N 410 30 410 40 {
 lab=#net2}
 N 490 30 490 40 {
 lab=#net2}
 N 580 30 580 40 {
-lab=#net7}
+lab=#net5}
 N 660 30 660 40 {
-lab=#net7}
+lab=#net5}
 N 750 30 750 40 {
-lab=#net9}
+lab=#net7}
 N 830 30 830 40 {
-lab=#net9}
+lab=#net7}
 N 920 30 920 40 {
-lab=#net11}
+lab=#net9}
 N 1000 30 1000 40 {
-lab=#net11}
+lab=#net9}
 N 1090 30 1090 40 {
-lab=#net13}
+lab=#net11}
 N 1170 30 1170 40 {
-lab=#net13}
+lab=#net11}
 N 1260 30 1260 40 {
-lab=#net15}
+lab=#net13}
 N 1340 30 1340 40 {
-lab=#net15}
+lab=#net13}
 N 1430 20 1430 140 {
-lab=#net4}
+lab=Vout}
 N 1550 140 1550 160 {
-lab=#net40}
+lab=#net38}
 N 1520 320 1520 360 {
-lab=#net3}
+lab=Vout}
 N 830 140 1000 140 {
-lab=#net4}
+lab=Vout}
 N 1000 140 1170 140 {
-lab=#net4}
+lab=Vout}
 N 1170 140 1340 140 {
-lab=#net4}
+lab=Vout}
 N 1470 140 1470 160 {
-lab=#net4}
+lab=Vout}
 N 1470 320 1470 330 {
-lab=#net3}
+lab=Vout}
 N 1630 140 1630 160 {
-lab=#net41}
+lab=#net39}
 N 1580 110 1600 110 {
-lab=#net40}
+lab=#net38}
 N 1590 110 1590 150 {
-lab=#net40}
+lab=#net38}
 N 1470 140 1510 140 {
-lab=#net4}
+lab=Vout}
 N 1510 140 1510 190 {
-lab=#net4}
+lab=Vout}
 N 1550 150 1590 150 {
-lab=#net40}
+lab=#net38}
 N 1470 320 1520 320 {
-lab=#net3}
+lab=Vout}
 N 1340 140 1370 140 {
-lab=#net4}
+lab=Vout}
 N 1090 170 1200 170 {
-lab=#net3}
+lab=Vout}
 N 1550 220 1550 230 {
 lab=GND}
 N 1370 140 1430 140 {
-lab=#net4}
+lab=Vout}
 N 1430 140 1470 140 {
-lab=#net4}
+lab=Vout}
 N 1200 170 1260 170 {
-lab=#net3}
+lab=Vout}
 N 1260 170 1430 170 {
-lab=#net3}
+lab=Vout}
 N 1430 170 1430 320 {
-lab=#net3}
+lab=Vout}
 N 1430 320 1470 320 {
-lab=#net3}
+lab=Vout}
 N 1560 310 1560 330 {
-lab=#net42}
+lab=#net40}
 N 1640 310 1640 330 {
-lab=#net43}
+lab=#net41}
 N 1590 280 1610 280 {
-lab=#net42}
+lab=#net40}
 N 1600 280 1600 320 {
-lab=#net42}
+lab=#net40}
 N 1560 320 1600 320 {
-lab=#net42}
+lab=#net40}
 C {madvlsi/nmos3.sym} 240 -10 0 0 {name=M1
 L=2
 W=50
@@ -951,7 +951,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/vdd.sym} 1630 80 0 0 {name=l14 lab=VDD}
-C {devices/lab_pin.sym} 1630 220 0 1 {name=p1 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 1470 140 0 1 {name=p1 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} 1560 280 0 1 {name=M34
 L=0.15
 W=1
@@ -984,7 +984,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/vdd.sym} 1640 250 0 0 {name=l12 lab=VDD}
-C {devices/lab_pin.sym} 1640 390 0 1 {name=p2 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 1470 320 0 1 {name=p2 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} 1550 530 0 0 {name=V7
 value=1.8}
 C {madvlsi/gnd.sym} 1550 560 0 0 {name=l15 lab=GND}
