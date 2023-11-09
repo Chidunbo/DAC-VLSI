@@ -5,8 +5,8 @@ K {}
 V {}
 S {}
 E {}
-T {bias generator} 230 80 0 0 0.2 0.2 {}
-T {R-2R ladder network} 70 220 0 0 0.2 0.2 {}
+T {bias generator} 180 10 0 0 0.2 0.2 {}
+T {R-2R ladder network} 70 230 0 0 0.2 0.2 {}
 T {Output stage: FVF} 230 200 0 0 0.2 0.2 {}
 T {cascode voltage
 generator} 360 220 0 0 0.2 0.2 {}
@@ -46,8 +46,6 @@ N 300 -20 300 -0 {
 lab=#net6}
 N 280 -0 280 20 {
 lab=#net4}
-N 190 90 300 90 {
-lab=#net6}
 N 300 30 300 90 {
 lab=#net6}
 N 190 130 210 130 {
@@ -60,6 +58,10 @@ N 200 150 210 150 {
 lab=#net8}
 N 130 30 130 40 {
 lab=VDD}
+N 190 90 220 90 {
+lab=#net9}
+N 230 90 300 90 {
+lab=#net6}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -165,7 +167,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_working.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_ideal.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -177,3 +179,4 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
 C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}
+C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}

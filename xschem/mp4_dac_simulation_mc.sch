@@ -5,8 +5,8 @@ K {}
 V {}
 S {}
 E {}
-T {bias generator} 230 80 0 0 0.2 0.2 {}
-T {R-2R ladder network} 70 220 0 0 0.2 0.2 {}
+T {bias generator} 180 20 0 0 0.2 0.2 {}
+T {R-2R ladder network} 70 230 0 0 0.2 0.2 {}
 T {Output stage: FVF} 230 200 0 0 0.2 0.2 {}
 T {cascode voltage
 generator} 360 220 0 0 0.2 0.2 {}
