@@ -46,8 +46,6 @@ N 300 -20 300 -0 {
 lab=#net6}
 N 280 -0 280 20 {
 lab=#net4}
-N 190 90 300 90 {
-lab=#net6}
 N 300 30 300 90 {
 lab=#net6}
 N 190 130 210 130 {
@@ -60,6 +58,10 @@ N 200 150 210 150 {
 lab=#net8}
 N 130 30 130 40 {
 lab=VDD}
+N 230 90 300 90 {
+lab=#net6}
+N 190 90 220 90 {
+lab=#net9}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -169,7 +171,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_1_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/simulation_mc_1_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -185,3 +187,4 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
 C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder_no_mirror.sym} 220 140 0 0 {name=x2}
+C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
