@@ -53,10 +53,10 @@ C {madvlsi/vsource.sym} 290 300 0 0 {name=V4
 value=0}
 C {madvlsi/gnd.sym} 290 330 0 0 {name=l4 lab=GND}
 C {madvlsi/vsource.sym} 350 300 0 0 {name=V5
-value=0}
+value=1.8}
 C {madvlsi/gnd.sym} 350 330 0 0 {name=l5 lab=GND}
 C {madvlsi/vsource.sym} 410 300 0 0 {name=V6
-value=0}
+value=1.8}
 C {madvlsi/gnd.sym} 410 330 0 0 {name=l6 lab=GND}
 C {madvlsi/vsource.sym} 50 300 0 0 {name=V0
 value=0}

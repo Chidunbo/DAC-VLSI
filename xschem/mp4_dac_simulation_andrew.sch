@@ -16,29 +16,49 @@ N 330 150 360 150 {
 lab=#net2}
 N 330 170 360 170 {
 lab=#net3}
-N 300 10 340 10 {
-lab=#net1}
 N 340 10 340 130 {
 lab=#net1}
 N 350 190 360 190 {
 lab=#net4}
-N 180 130 210 130 {
-lab=#net5}
-N 180 150 210 150 {
-lab=#net6}
-N 180 110 300 110 {
-lab=#net7}
-N 300 30 300 110 {
-lab=#net7}
-N 280 30 300 30 {
-lab=#net7}
 N 280 50 280 190 {
 lab=#net4}
 N 280 190 350 190 {
 lab=#net4}
-N 280 10 300 10 {
+N 280 -60 300 -60 {
+lab=VDD}
+N 210 170 210 190 {
+lab=#net5}
+N 210 200 210 220 {
+lab=Vout}
+N 280 20 280 50 {
+lab=#net4}
+N 300 0 300 30 {
+lab=#net6}
+N 340 -20 340 10 {
 lab=#net1}
-N 280 -10 300 -10 {
+N 280 -40 340 -40 {
+lab=#net1}
+N 340 -40 340 -20 {
+lab=#net1}
+N 280 -20 300 -20 {
+lab=#net6}
+N 300 -20 300 -0 {
+lab=#net6}
+N 280 -0 280 20 {
+lab=#net4}
+N 190 90 300 90 {
+lab=#net6}
+N 300 30 300 90 {
+lab=#net6}
+N 190 130 210 130 {
+lab=#net7}
+N 190 110 200 110 {
+lab=#net8}
+N 200 110 200 150 {
+lab=#net8}
+N 200 150 210 150 {
+lab=#net8}
+N 130 30 130 40 {
 lab=VDD}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
@@ -81,17 +101,17 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {./ladder.sym} 70 210 0 0 {name=x2}
+C {./ladder.sym} 220 140 0 0 {name=x2}
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
 C {./VGen.sym} 440 160 0 1 {name=x4}
-C {devices/lab_pin.sym} 210 170 2 1 {name=p5 sig_type=std_logic lab=Vout}
+C {devices/lab_pin.sym} 210 220 2 1 {name=p5 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} -30 300 0 0 {name=vdd
 value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 300 -10 2 0 {name=p17 sig_type=std_logic lab=VDD}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 20 0 0 {name=x1}
+C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 -30 0 0 {name=x1}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
 value=0.8}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
@@ -101,7 +121,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
   set wr_vecnames
   set wr_singlescale
   let code = 0
-  while code < 120
+  while code < 128
     if code eq 0
       let b0 = 0
     else
@@ -146,7 +166,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_andrew.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Vout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_andrew.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -155,3 +175,5 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
   end
   quit
 .endc"}
+C {madvlsi/ammeter1.sym} 210 190 0 0 {name=Viout}
+C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
