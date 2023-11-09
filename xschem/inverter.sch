@@ -18,9 +18,9 @@ lab=A}
 N 80 -20 110 -20 {
 lab=Y}
 N 80 50 80 60 {
-lab=VP}
+lab=#net1}
 N 80 -100 80 -90 {
-lab=VP}
+lab=VDD}
 C {devices/ipin.sym} 10 -20 0 0 {name=p1 lab=A
 }
 C {devices/opin.sym} 110 -20 0 0 {name=p2 lab=Y}
@@ -54,5 +54,5 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/iopin.sym} 80 -100 3 0 {name=p3 lab=VP}
-C {devices/iopin.sym} 80 60 1 0 {name=p4 lab=VN}
+C {madvlsi/vdd.sym} 80 -100 0 0 {name=l1 lab=VDD}
+C {madvlsi/gnd.sym} 80 60 0 0 {name=l2 lab=GND}
