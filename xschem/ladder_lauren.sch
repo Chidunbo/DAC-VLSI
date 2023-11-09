@@ -864,8 +864,8 @@ C {./inverter.sym} 830 330 0 0 {name=x4}
 C {./inverter.sym} 1000 330 0 0 {name=x5}
 C {./inverter.sym} 1170 330 0 0 {name=x6}
 C {./inverter.sym} 1340 330 0 0 {name=x7}
-C {madvlsi/isource.sym} 180 -160 0 0 {name=I1
-value=1n}
+C {madvlsi/isource.sym} 180 -160 0 0 {name=Iin
+value=1u}
 C {madvlsi/gnd.sym} 150 -190 0 0 {name=l2 lab=GND}
 C {madvlsi/tt_models.sym} 1740 -50 0 0 {
 name=TT_MODELS
@@ -873,7 +873,7 @@ only_toplevel=false
 value=".option wnflag=1
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
-C {devices/code_shown.sym} 1750 130 0 0 {name=s1 only_toplevel=false value=".dc 
+C {devices/code_shown.sym} 1750 130 0 0 {name=s1 only_toplevel=false value=".dc Vout 0 1.8 0.01
 .save all"}
 C {madvlsi/vsource.sym} 210 520 0 0 {name=V0
 value=1.8}
@@ -985,3 +985,7 @@ spiceprefix=X
 }
 C {madvlsi/vdd.sym} 1640 250 0 0 {name=l12 lab=VDD}
 C {devices/lab_pin.sym} 1640 390 0 1 {name=p2 sig_type=std_logic lab=Vout}
+C {madvlsi/vsource.sym} 1550 530 0 0 {name=V7
+value=1.8}
+C {madvlsi/gnd.sym} 1550 560 0 0 {name=l15 lab=GND}
+C {madvlsi/vdd.sym} 1550 500 0 0 {name=l18 lab=VDD}
