@@ -160,19 +160,19 @@ lab=VP}
 N 180 -30 240 -30 {
 lab=VP}
 N 210 0 340 0 {
-lab=VP}
+lab=Vgate}
 N 340 0 380 0 {
-lab=VP}
+lab=Vgate}
 N 380 0 510 0 {
-lab=VP}
+lab=Vgate}
 N 510 0 550 -0 {
-lab=VP}
+lab=Vgate}
 N 550 -0 680 0 {
-lab=VP}
+lab=Vgate}
 N 680 0 720 0 {
-lab=VP}
+lab=Vgate}
 N 190 0 210 -0 {
-lab=VP}
+lab=Vgate}
 N 210 70 210 320 {
 lab=V6}
 N 380 70 380 320 {
@@ -190,9 +190,9 @@ lab=V1}
 N 1230 70 1230 320 {
 lab=V0}
 N 180 0 190 0 {
-lab=VP}
+lab=Vgate}
 N 720 -0 1400 0 {
-lab=VP}
+lab=Vgate}
 N 210 320 210 490 {
 lab=V6}
 N 380 320 380 490 {
@@ -266,9 +266,9 @@ lab=VP}
 N 1450 170 1510 170 {
 lab=VP}
 N 100 -20 100 0 {
-lab=VP}
+lab=Vgate}
 N 100 0 180 0 {
-lab=VP}
+lab=Vgate}
 N 1640 290 1670 290 {
 lab=VP}
 N 1640 120 1660 120 {
@@ -327,8 +327,6 @@ N 1520 70 1520 140 {
 lab=VP}
 N 1520 70 1610 70 {
 lab=VP}
-N 1400 0 1690 0 {
-lab=VP}
 N 1690 0 1690 10 {
 lab=VP}
 N 1690 -0 1770 0 {
@@ -353,8 +351,6 @@ N 1700 330 1760 330 {
 lab=VN}
 N 1660 330 1660 410 {
 lab=VN}
-N 100 -80 100 -20 {
-lab=VP}
 N 100 -80 1260 -80 {
 lab=VP}
 N 1260 -80 1260 -30 {
@@ -382,6 +378,8 @@ lab=VP}
 N 1490 -80 1490 250 {
 lab=VP}
 N 1490 250 1610 250 {
+lab=VP}
+N 1610 -0 1690 0 {
 lab=VP}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
 L=4
@@ -832,7 +830,7 @@ C {./inverter.sym} 830 330 0 0 {name=x4}
 C {./inverter.sym} 1000 330 0 0 {name=x5}
 C {./inverter.sym} 1170 330 0 0 {name=x6}
 C {./inverter.sym} 1340 330 0 0 {name=x7}
-C {devices/iopin.sym} 100 -20 2 0 {name=p5 lab=VP}
+C {devices/iopin.sym} 100 -80 2 0 {name=p5 lab=VP}
 C {devices/iopin.sym} 180 -30 2 0 {name=p3 lab=Iin}
 C {madvlsi/nmos3.sym} 1610 120 2 0 {name=M30
 L=4
@@ -957,3 +955,4 @@ spiceprefix=X
 C {devices/opin.sym} 1780 280 0 0 {name=p2 lab=Iout}
 C {devices/opin.sym} 1770 90 0 0 {name=p12 lab=Idump}
 C {devices/iopin.sym} 1660 410 0 0 {name=p1 lab=VN}
+C {devices/iopin.sym} 100 -20 2 0 {name=p13 lab=Vgate}
