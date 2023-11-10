@@ -82,7 +82,7 @@ lab=#net7}
 N -80 -240 -10 -240 {
 lab=#net1}
 N 80 -240 180 -240 {
-lab=Vbp}
+lab=Vcp}
 N -200 -280 -200 -270 {
 lab=VDD}
 N -200 -280 210 -280 {
@@ -100,13 +100,17 @@ lab=VDD}
 N -70 -240 -70 -160 {
 lab=#net1}
 N -170 -240 -160 -240 {
-lab=Vbp}
+lab=Vcp}
 N 60 -240 80 -240 {
-lab=Vbp}
-N -160 -240 -160 -160 {
-lab=Vbp}
-N 60 -240 60 -160 {
-lab=Vbp}
+lab=Vcp}
+N -160 -260 -160 -240 {
+lab=Vcp}
+N -160 -260 60 -260 {
+lab=Vcp}
+N 60 -260 60 -240 {
+lab=Vcp}
+N 180 -240 270 -240 {
+lab=Vcp}
 C {madvlsi/nmos3.sym} 110 -30 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -233,7 +237,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 30 0 0 {name=R1
-value=20K
+value=100K
 m=1}
 C {madvlsi/vsource.sym} 280 10 0 0 {name=VP
 value=1.8}
@@ -264,10 +268,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ammeter.sym} 210 -100 0 0 {name=Vmeas}
-C {devices/code_shown.sym} 420 -130 0 0 {name=s1 only_toplevel=false value="
-.param W=24 L=4
+C {devices/code_shown.sym} 560 -290 0 0 {name=s1 only_toplevel=false value=".param W=24 L=4
 .dc Vout 0 1.8 0.01
-.save all"}
+.control
+  set wr_singlescale
+  set wr_vecnames
+  save all
+.endc"}
 C {devices/lab_pin.sym} 210 -70 0 0 {name=p5 sig_type=std_logic lab=Vout}
 C {madvlsi/pmos3.sym} -200 -240 2 0 {name=M10
 L=\{L\}
@@ -350,3 +357,8 @@ C {madvlsi/vsource.sym} 360 10 0 0 {name=Vout
 value=1.8}
 C {madvlsi/gnd.sym} 360 40 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 360 -20 0 1 {name=p6 sig_type=std_logic lab=Vout}
+C {madvlsi/vsource.sym} 440 10 0 0 {name=Vcp
+value=0.78}
+C {madvlsi/gnd.sym} 440 40 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 440 -20 0 1 {name=p3 sig_type=std_logic lab=Vcp}
+C {devices/lab_pin.sym} 270 -240 0 1 {name=p4 sig_type=std_logic lab=Vcp}

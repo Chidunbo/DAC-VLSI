@@ -11,55 +11,55 @@ T {Output stage: FVF} 230 200 0 0 0.2 0.2 {}
 T {cascode voltage
 generator} 360 220 0 0 0.2 0.2 {}
 N 330 130 360 130 {
-lab=#net1}
+lab=Vbp}
 N 330 150 360 150 {
-lab=#net2}
+lab=Vcp}
 N 330 170 360 170 {
-lab=#net3}
-N 340 10 340 130 {
 lab=#net1}
-N 350 190 360 190 {
-lab=#net4}
-N 280 50 280 190 {
-lab=#net4}
-N 280 190 350 190 {
-lab=#net4}
+N 340 10 340 130 {
+lab=Vbp}
 N 210 170 210 190 {
-lab=#net5}
+lab=#net2}
 N 210 200 210 220 {
 lab=Vout}
-N 280 20 280 50 {
-lab=#net4}
 N 300 0 300 30 {
-lab=#net6}
+lab=#net3}
 N 340 -20 340 10 {
-lab=#net1}
+lab=Vbp}
 N 280 -40 340 -40 {
-lab=#net1}
+lab=Vbp}
 N 340 -40 340 -20 {
-lab=#net1}
-N 280 -20 300 -20 {
-lab=#net6}
-N 300 -20 300 -0 {
-lab=#net6}
-N 280 -0 280 20 {
-lab=#net4}
+lab=Vbp}
 N 300 30 300 90 {
-lab=#net6}
+lab=#net3}
 N 190 130 210 130 {
-lab=#net7}
+lab=#net4}
 N 190 110 200 110 {
-lab=#net8}
+lab=#net5}
 N 200 110 200 150 {
-lab=#net8}
+lab=#net5}
 N 200 150 210 150 {
-lab=#net8}
+lab=#net5}
 N 130 30 130 40 {
 lab=VDD}
 N 190 90 220 90 {
-lab=#net9}
-N 230 90 300 90 {
 lab=#net6}
+N 230 90 300 90 {
+lab=#net3}
+N 350 100 350 150 {
+lab=Vcp}
+N 280 -60 350 -60 {
+lab=Vcp}
+N 350 -60 350 100 {
+lab=Vcp}
+N 280 0 300 0 {
+lab=#net3}
+N 280 -20 320 -20 {
+lab=#net7}
+N 320 -20 320 190 {
+lab=#net7}
+N 320 190 360 190 {
+lab=#net7}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -163,7 +163,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/MP4/lauren/dac_simulation_cascoded_IGen.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
+    wrdata ~/Documents/MP4/lauren/dac_simulation_cascoded_IGen.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout) v(Vbp) v(Vcp)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -176,5 +176,7 @@ C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
 C {./ladder.sym} 220 140 0 0 {name=x2}
-C {devices/lab_pin.sym} 280 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 280 -80 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 130 -20 0 0 {name=x1}
+C {devices/lab_pin.sym} 350 -60 2 0 {name=p20 sig_type=std_logic lab=Vcp}
+C {devices/lab_pin.sym} 340 -40 2 0 {name=p21 sig_type=std_logic lab=Vbp}
