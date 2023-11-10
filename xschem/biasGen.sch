@@ -84,31 +84,29 @@ lab=#net1}
 N -70 -260 -70 -190 {
 lab=#net1}
 N -200 -300 -200 -290 {
-lab=Vcp}
+lab=VP}
 N -200 -300 210 -300 {
-lab=Vcp}
+lab=VP}
 N 210 -300 210 -290 {
-lab=Vcp}
+lab=VP}
 N 110 -300 110 -290 {
-lab=Vcp}
+lab=VP}
 N 20 -310 20 -300 {
-lab=Vcp}
+lab=VP}
 N 20 -300 20 -290 {
-lab=Vcp}
+lab=VP}
 N -110 -300 -110 -290 {
-lab=Vcp}
+lab=VP}
 N -170 -260 -160 -260 {
-lab=Vcp}
-N -160 -280 -160 -260 {
-lab=Vcp}
-N -160 -280 70 -280 {
-lab=Vcp}
-N 70 -280 70 -260 {
-lab=Vcp}
-N 70 -260 180 -260 {
-lab=Vcp}
-N 180 -260 280 -260 {
-lab=Vcp}
+lab=Vbp}
+N -160 -260 -160 -190 {
+lab=Vbp}
+N 80 -260 180 -260 {
+lab=Vbp}
+N 60 -260 80 -260 {
+lab=Vbp}
+N 60 -260 60 -190 {
+lab=Vbp}
 C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
 L=4
 W=12
@@ -326,5 +324,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 280 -260 0 1 {name=p4 lab=Vcp}
 C {devices/ipin.sym} 20 -310 0 0 {name=p5 lab=VP}

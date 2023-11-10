@@ -60,10 +60,6 @@ N 190 90 220 90 {
 lab=#net9}
 N 230 90 300 90 {
 lab=#net6}
-N 280 -60 350 -60 {
-lab=#net2}
-N 350 -60 350 150 {
-lab=#net2}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -180,5 +176,5 @@ C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
 C {./ladder.sym} 220 140 0 0 {name=x2}
+C {devices/lab_pin.sym} 280 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 130 -20 0 0 {name=x1}
-C {devices/lab_pin.sym} 280 -80 2 0 {name=p17 sig_type=std_logic lab=VDD}

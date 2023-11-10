@@ -233,7 +233,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 30 0 0 {name=R1
-value=10K
+value=20K
 m=1}
 C {madvlsi/vsource.sym} 280 10 0 0 {name=VP
 value=1.8}
