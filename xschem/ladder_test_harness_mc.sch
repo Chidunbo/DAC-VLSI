@@ -763,7 +763,7 @@ C {madvlsi/tt_models.sym} 1370 460 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
-.param MC_SWITCH=0.0
+.param MC_SWITCH=1.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
 C {madvlsi/gnd.sym} 1480 310 0 0 {name=l14 lab=GND}
@@ -822,7 +822,7 @@ C {devices/code.sym} 1530 460 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_test/ladder_simulation_mc_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_test/ladder_simulation_12_4_mc_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
