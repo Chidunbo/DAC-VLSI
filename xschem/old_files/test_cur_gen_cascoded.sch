@@ -82,7 +82,7 @@ lab=#net7}
 N -80 -240 -10 -240 {
 lab=#net1}
 N 80 -240 180 -240 {
-lab=Vcp}
+lab=#net8}
 N -200 -280 -200 -270 {
 lab=VDD}
 N -200 -280 210 -280 {
@@ -100,17 +100,17 @@ lab=VDD}
 N -70 -240 -70 -160 {
 lab=#net1}
 N -170 -240 -160 -240 {
-lab=Vcp}
+lab=#net8}
 N 60 -240 80 -240 {
-lab=Vcp}
+lab=#net8}
 N -160 -260 -160 -240 {
-lab=Vcp}
+lab=#net8}
 N -160 -260 60 -260 {
-lab=Vcp}
+lab=#net8}
 N 60 -260 60 -240 {
-lab=Vcp}
+lab=#net8}
 N 180 -240 270 -240 {
-lab=Vcp}
+lab=#net8}
 C {madvlsi/nmos3.sym} 110 -30 0 0 {name=M1
 L=\{L\}
 W=\{W\}
@@ -361,4 +361,4 @@ C {madvlsi/vsource.sym} 440 10 0 0 {name=Vcp
 value=0.78}
 C {madvlsi/gnd.sym} 440 40 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 440 -20 0 1 {name=p3 sig_type=std_logic lab=Vcp}
-C {devices/lab_pin.sym} 270 -240 0 1 {name=p4 sig_type=std_logic lab=Vcp}
+C {devices/lab_pin.sym} 270 -240 2 0 {name=p4 sig_type=std_logic lab=Vbp}
