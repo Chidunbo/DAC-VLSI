@@ -200,7 +200,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 -70 2 0 {name=M8
-L=4
+L=12
 W=24
 body=VDD
 nf=1
