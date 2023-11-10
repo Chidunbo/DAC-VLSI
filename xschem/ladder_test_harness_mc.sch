@@ -770,10 +770,14 @@ C {madvlsi/gnd.sym} 1480 310 0 0 {name=l14 lab=GND}
 C {madvlsi/gnd.sym} 1640 310 0 0 {name=l15 lab=GND}
 C {devices/code.sym} 1530 460 0 0 {name=SPICE only_toplevel=false value="
 .control
-  set wr_vecnames
   set wr_singlescale
+  let runs = 10
+  let run = 1
+  while run <= runs
+  set appendwrite = FALSE
+  set wr_vecnames
   let code = 0
-  while code < 128
+   while code < 128
     if code eq 0
       let b0 = 0
     else
@@ -818,15 +822,19 @@ C {devices/code.sym} 1530 460 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_test/ladder_simulation_ideal.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/ladder_test/ladder_simulation_mc_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
     end
     let code = code + 1
   end
+  reset
+  let run = run + 1
+  end
   quit
-.endc"}
+.endc
+"}
 C {madvlsi/vsource.sym} 1480 280 0 0 {name=vdump
 value=0.2}
 C {madvlsi/vsource.sym} 1640 280 0 0 {name=vout
