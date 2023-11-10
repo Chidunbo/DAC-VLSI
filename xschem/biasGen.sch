@@ -286,7 +286,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 30 0 0 {name=R1
-value=40K
+value=90K
 m=1}
 C {madvlsi/gnd.sym} -200 80 0 0 {name=l2 lab=GND}
 C {madvlsi/pmos3.sym} 210 -160 0 0 {name=M9
