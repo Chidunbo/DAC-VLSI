@@ -83,7 +83,7 @@ N 110 -100 130 -100 {
 lab=Vbn}
 C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
 L=4
-W=12
+W=24
 body=GND
 nf=1
 mult=1
@@ -98,7 +98,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 20 -60 2 0 {name=M2
 L=4
-W=12
+W=24
 body=GND
 nf=1
 mult=1
@@ -113,7 +113,7 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -110 -60 0 0 {name=M3
 L=4
-W=12
+W=24
 body=GND
 nf=1
 mult=1
@@ -128,10 +128,10 @@ spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -200 -60 2 0 {name=M4
 L=4
-W=96
+W=24
 body=GND
 nf=1
-mult=1
+mult=8
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -143,7 +143,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 20 -190 0 0 {name=M5
 L=4
-W=12
+W=24
 body=VDD
 nf=1
 mult=1
@@ -158,7 +158,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -110 -190 2 0 {name=M6
 L=4
-W=12
+W=24
 body=VDD
 nf=1
 mult=1
@@ -173,7 +173,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -200 -190 2 0 {name=M7
 L=4
-W=12
+W=24
 body=VDD
 nf=1
 mult=1
@@ -188,7 +188,7 @@ spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 110 -190 0 0 {name=M8
 L=4
-W=12
+W=24
 body=VDD
 nf=1
 mult=1
@@ -206,7 +206,7 @@ value=50k
 m=1}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
 L=4
-W=12
+W=24
 body=VDD
 nf=1
 mult=1
