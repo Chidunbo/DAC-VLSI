@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-T {bias generator} 180 20 0 0 0.2 0.2 {}
+T {bias generator} 180 -90 0 0 0.2 0.2 {}
 T {R-2R ladder network} 70 230 0 0 0.2 0.2 {}
 T {Output stage: FVF} 230 200 0 0 0.2 0.2 {}
 T {cascode voltage
@@ -113,7 +113,7 @@ C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
-value=0.5}
+value=0.8}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
 C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
@@ -170,7 +170,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc_andrew/dac_simulation_mc_24_4_resistor_20\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(vout) i(Viin) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc/dac_simulation_mc_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(vout) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -186,5 +186,5 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
 C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
-C {./biasGen-j.sym} 130 -30 0 0 {name=x1}
 C {./ladder.sym} 220 140 0 0 {name=x2}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen.sym} 130 -20 0 0 {name=x1}

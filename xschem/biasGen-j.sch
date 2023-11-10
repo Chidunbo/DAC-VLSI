@@ -202,7 +202,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 0 0 0 {name=R1
-value=50k
+value=100k
 m=1}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
 L=4
