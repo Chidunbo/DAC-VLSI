@@ -110,7 +110,6 @@ value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 130 -30 0 0 {name=x1}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
 value=0.8}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
@@ -121,3 +120,4 @@ C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}
 C {devices/code_shown.sym} 520 200 0 0 {name=SPICE only_toplevel=false value="
 .dc vout 0 1.8 0.001
 .save all"}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen.sym} 130 -20 0 0 {name=x1}
