@@ -94,7 +94,7 @@ lab=#net4}
 N 310 -180 310 -160 {
 lab=#net5}
 C {madvlsi/nmos3.sym} 30 0 0 0 {name=M1
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -109,7 +109,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 30 100 2 0 {name=M2
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -124,7 +124,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 170 0 0 0 {name=M3
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -139,7 +139,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 170 100 2 0 {name=M4
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -154,7 +154,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 0 0 0 {name=M5
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -169,7 +169,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 310 100 0 0 {name=M6
-L=4
+L=12
 W=24
 body=GND
 nf=1
@@ -233,7 +233,7 @@ spiceprefix=X
 }
 C {devices/ipin.sym} -50 -110 2 1 {name=p2 lab=Vcp}
 C {madvlsi/pmos3.sym} 30 -210 0 0 {name=M15
-L=8
+L=12
 W=24
 body=VDD
 nf=1
@@ -248,7 +248,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 170 -210 0 0 {name=M16
-L=8
+L=12
 W=24
 body=VDD
 nf=1
@@ -263,7 +263,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 310 -210 0 0 {name=M17
-L=8
+L=12
 W=24
 body=VDD
 nf=1

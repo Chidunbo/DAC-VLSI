@@ -117,7 +117,7 @@ C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
-value=0.0}
+value=0.5}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
 C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
@@ -170,7 +170,7 @@ C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_ideal_vout0.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(Vout) v(Vout_FVF) i(Viin) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/dac_simulation_ideal_24_12.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(vout) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
