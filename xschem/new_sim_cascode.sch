@@ -164,7 +164,7 @@ let runs = 10
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/new_24_12/new_24_12_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(Vout) i(Viout)
+    wrdata ~/new_24_6/new_24_6_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(Vout) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
