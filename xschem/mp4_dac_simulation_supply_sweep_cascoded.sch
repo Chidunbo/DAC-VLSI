@@ -24,14 +24,10 @@ N 280 50 280 190 {
 lab=#net4}
 N 280 190 350 190 {
 lab=#net4}
-N 280 -60 300 -60 {
-lab=VDD}
 N 210 170 210 190 {
 lab=#net5}
 N 210 200 210 220 {
 lab=Vout}
-N 280 20 280 50 {
-lab=#net4}
 N 300 0 300 30 {
 lab=#net6}
 N 340 -20 340 10 {
@@ -44,22 +40,26 @@ N 280 -20 300 -20 {
 lab=#net6}
 N 300 -20 300 -0 {
 lab=#net6}
-N 280 -0 280 20 {
-lab=#net4}
-N 190 90 300 90 {
-lab=#net6}
 N 300 30 300 90 {
 lab=#net6}
-N 190 130 210 130 {
-lab=#net7}
+N 280 0 280 50 {
+lab=#net4}
+N 280 -60 350 -60 {
+lab=#net2}
+N 350 -60 350 150 {
+lab=#net2}
+N 210 170 220 170 {
+lab=#net5}
 N 190 110 200 110 {
-lab=#net8}
+lab=#net7}
 N 200 110 200 150 {
-lab=#net8}
+lab=#net7}
 N 200 150 210 150 {
+lab=#net7}
+N 190 130 210 130 {
 lab=#net8}
-N 130 30 130 40 {
-lab=VDD}
+N 190 90 300 90 {
+lab=#net6}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}
@@ -104,23 +104,22 @@ value=".option wnflag=1
 C {./FVF-1.sym} 460 180 0 1 {name=x3}
 C {devices/lab_pin.sym} 70 170 2 1 {name=p15 sig_type=std_logic lab=V5}
 C {./VGen.sym} 440 160 0 1 {name=x4}
-C {devices/lab_pin.sym} 210 220 2 1 {name=p5 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} -30 300 0 0 {name=vdd
 value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} 300 -60 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
-value=0.8}
+value=0.2}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
 C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
-C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {devices/code_shown.sym} 520 200 0 0 {name=SPICE only_toplevel=false value=".dc vout 0 1.8 0.001
 .control
   set wr_singlescale
   set wr_vecnames
   save all
 .endc"}
-C {./biasGen.sym} 130 -20 0 0 {name=x1}
 C {./ladder.sym} 220 140 0 0 {name=x5}
+C {madvlsi/vdd.sym} -30 270 0 0 {name=l10 lab=VDD}
+C {madvlsi/vdd.sym} 130 40 0 0 {name=l11 lab=VDD}
+C {/home/madvlsi/DAC-VLSI/xschem/biasGen.sym} 130 -20 0 0 {name=x1}
+C {devices/lab_pin.sym} 210 220 2 1 {name=p9 sig_type=std_logic lab=Vout}

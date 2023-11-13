@@ -266,8 +266,8 @@ lab=VP}
 N 100 0 180 0 {
 lab=VP}
 C {madvlsi/nmos3.sym} 240 0 0 0 {name=M1
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -279,10 +279,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 340 -30 3 0 {name=M3
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -294,10 +294,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 410 0 0 0 {name=M5
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -309,10 +309,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 510 -30 3 0 {name=M7
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -324,10 +324,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 410 70 0 0 {name=M6
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -339,10 +339,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 490 70 0 0 {name=M8
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -354,10 +354,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 240 70 0 0 {name=M2
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -369,10 +369,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 320 70 0 0 {name=M4
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -384,10 +384,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 580 0 0 0 {name=M9
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -399,10 +399,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 680 -30 3 0 {name=M11
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -414,10 +414,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 580 70 0 0 {name=M10
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -429,10 +429,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 660 70 0 0 {name=M12
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -444,10 +444,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 750 0 0 0 {name=M13
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -459,10 +459,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 850 -30 3 0 {name=M15
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -474,10 +474,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 750 70 0 0 {name=M14
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -489,10 +489,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 830 70 0 0 {name=M16
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -504,10 +504,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 920 0 0 0 {name=M17
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -519,10 +519,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1020 -30 3 0 {name=M19
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -534,10 +534,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 920 70 0 0 {name=M18
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -549,10 +549,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1000 70 0 0 {name=M20
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -564,10 +564,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1090 0 0 0 {name=M21
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -579,10 +579,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1190 -30 3 0 {name=M23
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -594,10 +594,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1090 70 0 0 {name=M22
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -609,10 +609,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1170 70 0 0 {name=M24
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -624,10 +624,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1260 0 0 0 {name=M25
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -639,10 +639,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1360 -30 3 0 {name=M27
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -654,10 +654,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1260 70 0 0 {name=M26
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -669,10 +669,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1340 70 0 0 {name=M28
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -684,10 +684,10 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {madvlsi/nmos3.sym} 1430 0 0 0 {name=M29
-L=12
-w=24
+L=4
+
 body=GND
 nf=1
 mult=1
@@ -699,7 +699,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-}
+W=12}
 C {devices/ipin.sym} 210 490 1 1 {name=p4 lab=V6}
 C {devices/ipin.sym} 380 490 3 0 {name=p6 lab=V5}
 C {devices/ipin.sym} 550 490 3 0 {name=p7 lab=V4}
@@ -714,7 +714,13 @@ C {./inverter.sym} 830 330 0 0 {name=x4}
 C {./inverter.sym} 1000 330 0 0 {name=x5}
 C {./inverter.sym} 1170 330 0 0 {name=x6}
 C {./inverter.sym} 1340 330 0 0 {name=x7}
-C {devices/iopin.sym} 100 -20 2 0 {name=p5 lab=VP}
-C {devices/iopin.sym} 180 -30 2 0 {name=p3 lab=Iin}
-C {devices/opin.sym} 1450 140 0 0 {name=p12 lab=Idump}
-C {devices/opin.sym} 1450 170 0 0 {name=p2 lab=Iout}
+C {devices/iopin.sym} 100 -20 2 0 {name=p5 lab=VP
+W=12}
+C {devices/iopin.sym} 180 -30 2 0 {name=p3 lab=Iin
+L=4
+
+W=12}
+C {devices/opin.sym} 1450 140 0 0 {name=p12 lab=Idump
+W=12}
+C {devices/opin.sym} 1450 170 0 0 {name=p2 lab=Iout
+W=12}

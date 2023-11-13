@@ -74,16 +74,12 @@ N 190 -110 190 -70 {
 lab=Vcn}
 N 40 -250 360 -250 {
 lab=VDD}
-N 290 30 390 30 {
-lab=Vbn}
 N 390 30 440 30 {
 lab=Vbn}
 N 360 -110 470 -110 {
 lab=#net2}
 N 470 -110 470 -100 {
 lab=#net2}
-N -20 -210 70 -210 {
-lab=Vbp}
 N 40 -180 40 -100 {
 lab=#net4}
 N 150 -180 150 -110 {
@@ -94,9 +90,13 @@ N 150 -40 150 -30 {
 lab=#net1}
 N 70 -210 120 -210 {
 lab=Vbp}
+N -10 -210 70 -210 {
+lab=Vbp}
+N 320 30 390 30 {
+lab=Vbn}
 C {madvlsi/nmos3.sym} 40 -70 0 0 {name=M5
-L=12
-W=96
+L=4
+W=24
 body=GND
 nf=1
 mult=1
@@ -110,8 +110,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 40 10 0 0 {name=M6
-L=12
-W=24
+L=4
+W=12
 body=GND
 nf=1
 mult=1
@@ -125,8 +125,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 150 -70 2 0 {name=M4
-L=12
-W=24
+L=2
+W=12
 body=GND
 nf=1
 mult=1
@@ -140,8 +140,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 40 -210 2 0 {name=M1
-L=48
-W=24
+L=4
+W=6
 body=VDD
 nf=1
 mult=1
@@ -155,8 +155,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 150 -210 2 1 {name=M2
-L=12
-W=24
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -170,8 +170,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 -70 0 0 {name=M9
-L=12
-W=96
+L=4
+W=24
 body=VDD
 nf=1
 mult=1
@@ -185,8 +185,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 470 30 2 1 {name=M11
-L=12
-W=24
+L=6
+W=12
 body=GND
 nf=1
 mult=1
@@ -200,8 +200,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 470 -70 2 0 {name=M8
-L=12
-W=24
+L=2
+W=12
 body=VDD
 nf=1
 mult=1
@@ -215,8 +215,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 360 30 2 0 {name=M12
-L=48
-W=24
+L=4
+W=6
 body=GND
 nf=1
 mult=1
@@ -230,8 +230,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 360 -210 0 0 {name=M7
-L=12
-W=24
+L=4
+W=12
 body=VDD
 nf=1
 mult=1
@@ -245,8 +245,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 530 -70 2 1 {name=p1 lab=Vcp}
-C {devices/ipin.sym} -20 -210 0 0 {name=p5 lab=Vbp}
-C {devices/ipin.sym} 290 30 2 1 {name=p4 lab=Vbn}
+C {devices/ipin.sym} -10 -210 0 0 {name=p5 lab=Vbp}
+C {devices/ipin.sym} 320 30 2 1 {name=p4 lab=Vbn}
 C {devices/opin.sym} 200 -70 0 0 {name=p2 lab=Vcn}
 C {madvlsi/gnd.sym} 40 60 0 0 {name=l1 lab=GND}
 C {madvlsi/vdd.sym} 40 -260 0 0 {name=l2 lab=VDD}
