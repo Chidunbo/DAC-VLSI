@@ -18,46 +18,44 @@ N 330 170 360 170 {
 lab=Vcn}
 N 340 10 340 130 {
 lab=#net1}
-N 350 190 360 190 {
-lab=#net2}
 N 210 170 210 190 {
-lab=#net3}
+lab=#net2}
 N 210 200 210 220 {
 lab=Vout}
 N 340 -20 340 10 {
 lab=#net1}
 N 190 130 210 130 {
-lab=#net4}
+lab=#net3}
 N 190 110 200 110 {
-lab=#net5}
+lab=#net4}
 N 200 110 200 150 {
-lab=#net5}
+lab=#net4}
 N 200 150 210 150 {
-lab=#net5}
+lab=#net4}
 N 130 30 130 40 {
 lab=VDD}
 N 190 90 220 90 {
-lab=#net6}
+lab=#net5}
 N 360 150 420 150 {
 lab=Vcp}
 N 360 170 420 170 {
 lab=Vcn}
 N 230 90 250 90 {
-lab=#net7}
-N 280 190 350 190 {
-lab=#net2}
+lab=#net6}
 N 240 -30 340 -30 {
 lab=#net1}
 N 340 -30 340 -20 {
 lab=#net1}
 N 250 -10 250 90 {
-lab=#net7}
+lab=#net6}
 N 240 -10 250 -10 {
+lab=#net6}
+N 160 50 280 50 {
 lab=#net7}
-N 240 10 280 10 {
-lab=#net2}
-N 280 10 280 190 {
-lab=#net2}
+N 280 50 280 190 {
+lab=#net7}
+N 280 190 360 190 {
+lab=#net7}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 330 0 0 {name=l1 lab=GND}

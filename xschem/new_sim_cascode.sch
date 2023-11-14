@@ -26,8 +26,6 @@ N 210 200 210 220 {
 lab=Vout}
 N 340 -20 340 10 {
 lab=#net1}
-N 280 -40 340 -40 {
-lab=#net1}
 N 340 -40 340 -20 {
 lab=#net1}
 N 190 130 210 130 {
@@ -50,11 +48,19 @@ N 230 90 250 90 {
 lab=#net7}
 N 250 -20 250 90 {
 lab=#net7}
-N 250 -20 280 -20 {
+N 240 -70 340 -70 {
+lab=#net1}
+N 340 -70 340 -40 {
+lab=#net1}
+N 250 -50 250 -20 {
 lab=#net7}
-N 280 0 280 190 {
+N 240 -50 250 -50 {
+lab=#net7}
+N 160 10 290 10 {
 lab=#net2}
-N 280 190 350 190 {
+N 290 10 290 190 {
+lab=#net2}
+N 290 190 350 190 {
 lab=#net2}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
@@ -105,9 +111,9 @@ C {madvlsi/vsource.sym} -30 300 0 0 {name=vdd
 value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} -20 -40 0 0 {name=p17 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 240 -90 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
-value=0.6}
+value=1.2}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} -100 270 2 0 {name=p18 sig_type=std_logic lab=Vout}
 C {devices/code.sym} 510 190 0 0 {name=SPICE only_toplevel=false value="
@@ -164,7 +170,7 @@ let runs = 10
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc/new_24_8_current_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc/new_24_8_Ires_\{$&run\}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -180,7 +186,6 @@ C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
 C {./ladder.sym} 220 140 0 0 {name=x2}
-C {devices/lab_pin.sym} -20 -20 2 1 {name=p22 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 420 150 0 1 {name=p23 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 420 170 0 1 {name=p24 sig_type=std_logic lab=Vcn}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/a_new_curgen-1.sym} 130 -20 0 0 {name=x1}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 90 -60 0 0 {name=x1}

@@ -81,6 +81,8 @@ N 70 -100 110 -100 {
 lab=Vbn}
 N 110 -100 130 -100 {
 lab=Vbn}
+N -260 -30 -200 -30 {
+lab=Ires}
 C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
 L=8
 W=24
@@ -202,7 +204,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/resistor.sym} -200 0 0 0 {name=R1
-value=100k
+value=50k
 m=1}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
 L=8
@@ -224,3 +226,4 @@ C {devices/opin.sym} 220 -150 0 0 {name=p1 lab=Iin}
 C {devices/opin.sym} 280 -190 0 0 {name=p2 lab=Vbp}
 C {devices/opin.sym} 130 -100 0 0 {name=p3 lab=Vbn}
 C {devices/iopin.sym} -200 -230 2 0 {name=p4 lab=VP}
+C {devices/opin.sym} -260 -30 2 0 {name=p5 lab=Ires}
