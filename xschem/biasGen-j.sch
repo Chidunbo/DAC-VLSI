@@ -82,7 +82,7 @@ lab=Vbn}
 N 110 -100 130 -100 {
 lab=Vbn}
 C {madvlsi/nmos3.sym} 110 -60 0 0 {name=M1
-L=4
+L=8
 W=24
 body=GND
 nf=1
@@ -97,7 +97,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 20 -60 2 0 {name=M2
-L=4
+L=8
 W=24
 body=GND
 nf=1
@@ -112,7 +112,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -110 -60 0 0 {name=M3
-L=4
+L=8
 W=24
 body=GND
 nf=1
@@ -127,7 +127,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} -200 -60 2 0 {name=M4
-L=4
+L=8
 W=24
 body=GND
 nf=1
@@ -142,7 +142,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 20 -190 0 0 {name=M5
-L=4
+L=8
 W=24
 body=VDD
 nf=1
@@ -157,7 +157,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -110 -190 2 0 {name=M6
-L=4
+L=8
 W=24
 body=VDD
 nf=1
@@ -172,7 +172,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} -200 -190 2 0 {name=M7
-L=4
+L=8
 W=24
 body=VDD
 nf=1
@@ -187,7 +187,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/pmos3.sym} 110 -190 0 0 {name=M8
-L=4
+L=8
 W=24
 body=VDD
 nf=1
@@ -205,7 +205,7 @@ C {madvlsi/resistor.sym} -200 0 0 0 {name=R1
 value=100k
 m=1}
 C {madvlsi/pmos3.sym} 210 -190 0 0 {name=M9
-L=4
+L=8
 W=24
 body=VDD
 nf=1

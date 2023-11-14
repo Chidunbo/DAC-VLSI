@@ -26,10 +26,6 @@ N 210 200 210 220 {
 lab=Vout}
 N 340 -20 340 10 {
 lab=#net1}
-N 280 -40 340 -40 {
-lab=#net1}
-N 340 -40 340 -20 {
-lab=#net1}
 N 190 130 210 130 {
 lab=#net4}
 N 190 110 200 110 {
@@ -48,13 +44,19 @@ N 360 170 420 170 {
 lab=Vcn}
 N 230 90 250 90 {
 lab=#net7}
-N 250 -20 250 90 {
-lab=#net7}
-N 250 -20 280 -20 {
-lab=#net7}
-N 280 0 280 190 {
-lab=#net2}
 N 280 190 350 190 {
+lab=#net2}
+N 240 -30 340 -30 {
+lab=#net1}
+N 340 -30 340 -20 {
+lab=#net1}
+N 250 -10 250 90 {
+lab=#net7}
+N 240 -10 250 -10 {
+lab=#net7}
+N 240 10 280 10 {
+lab=#net2}
+N 280 10 280 190 {
 lab=#net2}
 C {madvlsi/vsource.sym} 110 300 0 0 {name=Vb1
 value=0}
@@ -105,7 +107,7 @@ C {madvlsi/vsource.sym} -30 300 0 0 {name=vdd
 value=1.8}
 C {madvlsi/gnd.sym} -30 330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} -30 270 2 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/lab_pin.sym} -20 -40 0 0 {name=p17 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 240 -50 2 0 {name=p17 sig_type=std_logic lab=VDD}
 C {madvlsi/vsource.sym} -100 300 0 0 {name=vout
 value=0.6}
 C {madvlsi/gnd.sym} -100 330 0 0 {name=l9 lab=GND}
@@ -114,13 +116,12 @@ C {madvlsi/ammeter1.sym} 210 200 2 0 {name=Viout}
 C {devices/lab_pin.sym} 130 30 2 0 {name=p19 sig_type=std_logic lab=VDD}
 C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
 C {./ladder.sym} 220 140 0 0 {name=x2}
-C {devices/lab_pin.sym} -20 -20 2 1 {name=p22 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 420 150 0 1 {name=p23 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 420 170 0 1 {name=p24 sig_type=std_logic lab=Vcn}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/a_new_curgen-1.sym} 130 -20 0 0 {name=x1}
 C {devices/code_shown.sym} 530 200 0 0 {name=SPICE only_toplevel=false value=".dc vout 0 1.8 0.001
 .control
   set wr_singlescale
   set wr_vecnames
   save all
 .endc"}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 90 -20 0 0 {name=x1}
