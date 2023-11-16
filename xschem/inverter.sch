@@ -18,18 +18,18 @@ lab=A}
 N 80 -20 110 -20 {
 lab=Y}
 N 80 50 80 60 {
-lab=#net1}
+lab=GND}
 N 80 -100 80 -90 {
 lab=VDD}
 C {devices/ipin.sym} 10 -20 0 0 {name=p1 lab=A
 }
 C {devices/opin.sym} 110 -20 0 0 {name=p2 lab=Y}
 C {madvlsi/pmos3.sym} 80 -60 0 0 {name=M1
-L=4
-W=12
+L=1
+W=1
 body=VDD
 nf=1
-mult=1
+mult=0.15
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -40,11 +40,11 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {madvlsi/nmos3.sym} 80 20 0 0 {name=M2
-L=4
-W=12
+L=1
+W=1
 body=GND
 nf=1
-mult=1
+mult=0.15
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

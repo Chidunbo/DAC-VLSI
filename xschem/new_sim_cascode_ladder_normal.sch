@@ -62,8 +62,6 @@ N 290 10 290 190 {
 lab=#net2}
 N 290 190 350 190 {
 lab=#net2}
-N 130 240 130 250 {
-lab=GND}
 C {madvlsi/vsource.sym} 110 330 0 0 {name=Vb1
 value=0}
 C {madvlsi/gnd.sym} 110 360 0 0 {name=l1 lab=GND}
@@ -171,7 +169,7 @@ let runs = 10
     alter Vb6 1.8*$&b6
     save all
     op
-    wrdata ~/Documents/DAC-VLSI/simulation_results/mc/05_8_ladder_lds_VGen_\{$&run\}.txt i(Viin) i(Viout)
+    wrdata ~/Documents/DAC-VLSI/simulation_results/mc/24_8_ladder_normal_\{$&run\}.txt i(Viin) i(Viout)
     if code eq 0
       set appendwrite
       set wr_vecnames = FALSE
@@ -188,7 +186,6 @@ C {madvlsi/ammeter1.sym} 230 90 1 0 {name=Viin}
 C {devices/lab_pin.sym} 420 150 0 1 {name=p23 sig_type=std_logic lab=Vcp}
 C {devices/lab_pin.sym} 420 170 0 1 {name=p24 sig_type=std_logic lab=Vcn}
 C {/home/madvlsi/Documents/DAC-VLSI/xschem/biasGen-j.sym} 90 -60 0 0 {name=x1}
-C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder_lds.sym} 220 140 0 0 {name=x2}
-C {madvlsi/gnd.sym} 130 250 0 0 {name=l10 lab=GND}
 C {madvlsi/vdd.sym} 130 30 0 0 {name=l11 lab=VDD}
 C {madvlsi/vdd.sym} -30 300 0 0 {name=l12 lab=VDD}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/ladder.sym} 220 140 0 0 {name=x2}

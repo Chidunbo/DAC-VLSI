@@ -757,7 +757,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 210 -800 1 1 {name=M3_a
 L=8
 
@@ -772,7 +772,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 300 -630 3 0 {name=M2_a
 L=8
 
@@ -787,7 +787,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 210 -630 1 1 {name=M4_a
 L=8
 
@@ -802,7 +802,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 460 -800 1 1 {name=M1_b
 L=8
 
@@ -817,7 +817,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 550 -800 3 0 {name=M3_b
 L=8
 
@@ -832,7 +832,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 550 -630 3 0 {name=M4_b
 L=8
 
@@ -847,7 +847,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 460 -630 1 1 {name=M2_b
 L=8
 
@@ -862,7 +862,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {devices/iopin.sym} 100 -750 2 0 {name=p14 lab=VP}
 C {devices/iopin.sym} 100 -870 2 0 {name=p15 lab=Iin}
 C {madvlsi/nmos3.sym} 740 -800 3 0 {name=M30
@@ -879,7 +879,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 650 -800 1 1 {name=M31
 L=8
 
@@ -894,7 +894,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 740 -630 3 0 {name=M32
 L=8
 
@@ -909,7 +909,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 650 -630 1 1 {name=M33
 L=8
 
@@ -924,7 +924,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 900 -800 1 1 {name=M34
 L=8
 
@@ -939,7 +939,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 990 -800 3 0 {name=M35
 L=8
 
@@ -954,7 +954,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 990 -630 3 0 {name=M36
 L=8
 
@@ -969,7 +969,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 900 -630 1 1 {name=M37
 L=8
 
@@ -984,7 +984,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1180 -800 3 0 {name=M38
 L=8
 
@@ -999,7 +999,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1090 -800 1 1 {name=M39
 L=8
 
@@ -1014,7 +1014,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1180 -630 3 0 {name=M40
 L=8
 
@@ -1029,7 +1029,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1090 -630 1 1 {name=M41
 L=8
 
@@ -1044,7 +1044,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1340 -800 1 1 {name=M42
 L=8
 
@@ -1059,7 +1059,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1430 -800 3 0 {name=M43
 L=8
 
@@ -1074,7 +1074,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1430 -630 3 0 {name=M44
 L=8
 
@@ -1089,7 +1089,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1340 -630 1 1 {name=M45
 L=8
 
@@ -1104,7 +1104,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1620 -800 3 0 {name=M46
 L=8
 
@@ -1119,7 +1119,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1530 -800 1 1 {name=M47
 L=8
 
@@ -1134,7 +1134,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1620 -630 3 0 {name=M48
 L=8
 
@@ -1149,7 +1149,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1530 -630 1 1 {name=M49
 L=8
 
@@ -1164,7 +1164,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1780 -800 1 1 {name=M50
 L=8
 
@@ -1179,7 +1179,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1870 -800 3 0 {name=M51
 L=8
 
@@ -1194,7 +1194,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1870 -630 3 0 {name=M52
 L=8
 
@@ -1209,7 +1209,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1780 -630 1 1 {name=M53
 L=8
 
@@ -1224,7 +1224,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2060 -800 3 0 {name=M54
 L=8
 
@@ -1239,7 +1239,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1970 -800 1 1 {name=M55
 L=8
 
@@ -1254,7 +1254,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2060 -630 3 0 {name=M56
 L=8
 
@@ -1269,7 +1269,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 1970 -630 1 1 {name=M57
 L=8
 
@@ -1284,7 +1284,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2220 -800 1 1 {name=M58
 L=8
 
@@ -1299,7 +1299,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2310 -800 3 0 {name=M59
 L=8
 
@@ -1314,7 +1314,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2310 -630 3 0 {name=M60
 L=8
 
@@ -1329,7 +1329,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2220 -630 1 1 {name=M61
 L=8
 
@@ -1344,7 +1344,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2500 -800 3 0 {name=M62
 L=8
 
@@ -1359,7 +1359,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2410 -800 1 1 {name=M63
 L=8
 
@@ -1374,7 +1374,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2500 -630 3 0 {name=M64
 L=8
 
@@ -1389,7 +1389,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2410 -630 1 1 {name=M65
 L=8
 
@@ -1404,7 +1404,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2660 -800 1 1 {name=M66
 L=8
 
@@ -1419,7 +1419,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2750 -800 3 0 {name=M67
 L=8
 
@@ -1434,7 +1434,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2750 -630 3 0 {name=M68
 L=8
 
@@ -1449,7 +1449,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2660 -630 1 1 {name=M69
 L=8
 
@@ -1464,7 +1464,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2940 -800 3 0 {name=M70
 L=8
 
@@ -1479,7 +1479,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2850 -800 1 1 {name=M71
 L=8
 
@@ -1494,7 +1494,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2940 -630 3 0 {name=M72
 L=8
 
@@ -1509,7 +1509,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 2850 -630 1 1 {name=M73
 L=8
 
@@ -1524,7 +1524,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3100 -800 1 1 {name=M74
 L=8
 
@@ -1539,7 +1539,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3190 -800 3 0 {name=M75
 L=8
 
@@ -1554,7 +1554,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3190 -630 3 0 {name=M76
 L=8
 
@@ -1569,7 +1569,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3100 -630 1 1 {name=M77
 L=8
 
@@ -1584,7 +1584,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {devices/opin.sym} 3520 -480 0 0 {name=p16 lab=Idump}
 C {devices/opin.sym} 3520 -450 0 0 {name=p17 lab=Iout}
 C {madvlsi/nmos3.sym} 3290 -800 1 1 {name=M78
@@ -1601,7 +1601,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3380 -800 3 0 {name=M79
 L=8
 
@@ -1616,7 +1616,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {./inverter.sym} 570 -340 0 0 {name=x8}
 C {devices/ipin.sym} 460 -250 1 1 {name=p1 lab=V6}
 C {./inverter.sym} 1010 -340 0 0 {name=x9}
@@ -1645,7 +1645,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 130 -800 3 0 {name=M2
 L=8
 
@@ -1660,7 +1660,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {madvlsi/nmos3.sym} 3470 -800 1 1 {name=M3
 L=8
 
@@ -1675,7 +1675,7 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
 C {devices/iopin.sym} 100 -700 2 0 {name=p2 lab=VN}
 C {madvlsi/nmos3.sym} 3280 -630 1 1 {name=M4
 L=8
@@ -1691,4 +1691,4 @@ nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
-W=24}
+W=0.5}
