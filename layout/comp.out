@@ -1,0 +1,20 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class ladder.spice (0):  Merged 31 parallel devices.
+Class ladder_lds_no_inverter.spice (1):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: ladder.spice                    |Circuit 2: ladder_lds_no_inverter.spice    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (62->31)           |sky130_fd_pr__nfet_01v8 (62->31)           
+Number of devices: 31                      |Number of devices: 31                      
+Number of nets: 33                         |Number of nets: 33                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes ladder.spice and ladder_lds_no_inverter.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
