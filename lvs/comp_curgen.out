@@ -1,0 +1,25 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Class curgen-xs.spice (0):  Merged 24 parallel devices.
+Class curgen_1.spice (1):  Merged 24 parallel devices.
+Subcircuit summary:
+Circuit 1: curgen-xs.spice                 |Circuit 2: curgen_1.spice                  
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (11->6)            |sky130_fd_pr__pfet_01v8 (11->6)            
+sky130_fd_pr__nfet_01v8 (25->6)            |sky130_fd_pr__nfet_01v8 (25->6)            
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes curgen-xs.spice and curgen_1.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

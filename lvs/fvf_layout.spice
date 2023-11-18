@@ -1,0 +1,43 @@
+* NGSPICE file created from fvf.ext - technology: sky130A
+
+X0 VP VP a_n260_9510# VP sky130_fd_pr__pfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X1 a_n260_9510# VP VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X2 Idump NV NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X3 NV NV Iout NV sky130_fd_pr__nfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X4 a_4600_6700# Vcn Iout NV sky130_fd_pr__nfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X5 VP VP a_7800_9510# VP sky130_fd_pr__pfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X6 a_4600_6700# Vcp a_7800_9510# VP sky130_fd_pr__pfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X7 NV a_4600_6700# Iout NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X8 VP Vbp a_n260_9510# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X9 VP Vbp a_7800_9510# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X10 Idump Vcn a_2940_6700# NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X11 VP Vbp a_15850_9510# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X12 a_n260_9510# Vcp a_2940_6700# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X13 NV NV Iout NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X14 Idump NV NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X15 a_n260_9510# VP VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X16 a_7800_9510# VP VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X17 a_15850_2310# Vcn Ifout NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=95.4 ps=39.9 w=12 l=8
+X18 a_15850_9510# Vcp Ifout VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=95.4 ps=39.9 w=12 l=8
+X19 VP VP a_n260_9510# VP sky130_fd_pr__pfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X20 NV NV Idump NV sky130_fd_pr__nfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X21 a_15850_9510# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X22 a_15850_2310# a_4600_6700# NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X23 NV a_2940_6700# Idump NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X24 Ifout Vcp a_15850_9510# VP sky130_fd_pr__pfet_01v8 ad=95.4 pd=39.9 as=48 ps=20 w=12 l=8
+X25 Ifout Vcn a_15850_2310# NV sky130_fd_pr__nfet_01v8 ad=95.4 pd=39.9 as=48 ps=20 w=12 l=8
+X26 Idump a_2940_6700# NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X27 VP VP a_7800_9510# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X28 NV a_4600_6700# a_15850_2310# NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X29 a_n260_9510# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X30 NV NV Idump NV sky130_fd_pr__nfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X31 a_2940_6700# Vcp a_n260_9510# VP sky130_fd_pr__pfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X32 a_7800_9510# Vcp a_4600_6700# VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X33 a_7800_9510# VP VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X34 a_2940_6700# Vcn Idump NV sky130_fd_pr__nfet_01v8 ad=96 pd=40 as=48 ps=20 w=12 l=8
+X35 Iout Vcn a_4600_6700# NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X36 Iout NV NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=96 ps=40 w=12 l=8
+X37 Iout a_4600_6700# NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X38 Iout NV NV NV sky130_fd_pr__nfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+X39 a_7800_9510# Vbp VP VP sky130_fd_pr__pfet_01v8 ad=48 pd=20 as=48 ps=20 w=12 l=8
+
