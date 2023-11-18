@@ -178,21 +178,21 @@ lab=#net14}
 N -20 210 -20 530 {
 lab=V3}
 C {./VGen.sym} 440 160 0 1 {name=x4}
-C {/home/madvlsi/Desktop/lds-updated/lds-curgen-j1.sym} 80 -60 0 0 {name=x1}
-C {/home/madvlsi/Desktop/lds-updated/FVF_lds.sym} 80 290 0 0 {name=x5}
 C {./inverter.sym} -250 50 0 0 {name=x3}
-C {/home/madvlsi/Documents/MP4/DAC-VLSI/xschem/lds-ladder.sym} 40 220 0 0 {name=x2}
 C {./inverter.sym} -250 180 0 0 {name=x6}
 C {./inverter.sym} -250 320 0 0 {name=x7}
 C {./inverter.sym} -160 420 3 0 {name=x8}
 C {./inverter.sym} -420 270 0 0 {name=x9}
 C {./inverter.sym} -10 420 3 0 {name=x10}
 C {./inverter.sym} -420 140 0 0 {name=x11}
-C {devices/lab_pin.sym} -360 180 2 1 {name=p2 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} -360 50 2 1 {name=p3 sig_type=std_logic lab=V0}
-C {devices/lab_pin.sym} -160 530 2 1 {name=p4 sig_type=std_logic lab=V6}
-C {devices/lab_pin.sym} -530 140 2 1 {name=p6 sig_type=std_logic lab=V2}
-C {devices/lab_pin.sym} -530 270 2 1 {name=p7 sig_type=std_logic lab=V4}
-C {devices/lab_pin.sym} -10 530 2 1 {name=p8 sig_type=std_logic lab=V3}
-C {devices/lab_pin.sym} -360 320 2 1 {name=p15 sig_type=std_logic lab=V5}
-C {devices/lab_pin.sym} 330 280 0 1 {name=p1 sig_type=std_logic lab=Ifout}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/lds-ladder.sym} 40 220 0 0 {name=x2}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/FVF_lds.sym} 80 290 0 0 {name=x5}
+C {/home/madvlsi/Documents/DAC-VLSI/xschem/lds-curgen-j1.sym} 80 -60 0 0 {name=x1}
+C {devices/ipin.sym} -360 50 0 0 {name=p3 lab=V0}
+C {devices/ipin.sym} -360 180 0 0 {name=p2 lab=V1}
+C {devices/ipin.sym} -530 140 0 0 {name=p5 lab=V2}
+C {devices/ipin.sym} -10 530 3 0 {name=p6 lab=V3}
+C {devices/ipin.sym} -530 270 0 0 {name=p7 lab=V4}
+C {devices/ipin.sym} -360 320 0 0 {name=p8 lab=V5}
+C {devices/ipin.sym} -160 530 3 0 {name=p4 lab=V6}
+C {devices/opin.sym} 330 280 0 0 {name=p1 lab=Ifout}
