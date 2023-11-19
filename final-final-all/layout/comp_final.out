@@ -1,0 +1,160 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Subcircuit summary:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: inverter                        |Circuit 2: inverter                        
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VP                                         |VDD **Mismatch**                           
+VN                                         |GND **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for inverter and inverter altered to match.
+Device classes inverter and inverter are equivalent.
+
+Class lds-ladder (0):  Merged 31 parallel devices.
+Class lds-ladder (1):  Merged 31 parallel devices.
+Subcircuit summary:
+Circuit 1: lds-ladder                      |Circuit 2: lds-ladder                      
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (62->31)           |sky130_fd_pr__nfet_01v8 (62->31)           
+Number of devices: 31                      |Number of devices: 31                      
+Number of nets: 33                         |Number of nets: 33                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: lds-ladder                      |Circuit 2: lds-ladder                      
+-------------------------------------------|-------------------------------------------
+Iin                                        |Iin                                        
+VP                                         |VDD **Mismatch**                           
+Iout                                       |Iout                                       
+VN                                         |GND **Mismatch**                           
+V6                                         |V6                                         
+V5                                         |V5                                         
+V4                                         |V4                                         
+V2                                         |V2                                         
+V3                                         |V3                                         
+V1                                         |V1                                         
+V0                                         |V0                                         
+V6i                                        |V6i                                        
+V4i                                        |V4i                                        
+V3i                                        |V3i                                        
+V2i                                        |V2i                                        
+V1i                                        |V1i                                        
+V0i                                        |V0i                                        
+V5i                                        |V5i                                        
+Idump                                      |Idump                                      
+---------------------------------------------------------------------------------------
+Cell pin lists for lds-ladder and lds-ladder altered to match.
+Device classes lds-ladder and lds-ladder are equivalent.
+
+Class FVF_lds (0):  Merged 24 parallel devices.
+Class FVF_lds (1):  Merged 24 parallel devices.
+Subcircuit summary:
+Circuit 1: FVF_lds                         |Circuit 2: FVF_lds                         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (20->8)            |sky130_fd_pr__pfet_01v8 (20->8)            
+sky130_fd_pr__nfet_01v8 (20->8)            |sky130_fd_pr__nfet_01v8 (20->8)            
+Number of devices: 16                      |Number of devices: 16                      
+Number of nets: 14                         |Number of nets: 14                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: FVF_lds                         |Circuit 2: FVF_lds                         
+-------------------------------------------|-------------------------------------------
+Ifout                                      |Ifout                                      
+Vbp                                        |Vbp                                        
+Vcp                                        |Vcp                                        
+Idump                                      |Idump                                      
+Vcn                                        |Vcn                                        
+Iout                                       |Iout                                       
+VP                                         |VDD **Mismatch**                           
+VN                                         |GND **Mismatch**                           
+---------------------------------------------------------------------------------------
+Cell pin lists for FVF_lds and FVF_lds altered to match.
+Device classes FVF_lds and FVF_lds are equivalent.
+
+Class lds-curgen-j1 (0):  Merged 24 parallel devices.
+Class lds-curgen-j1 (1):  Merged 24 parallel devices.
+Subcircuit summary:
+Circuit 1: lds-curgen-j1                   |Circuit 2: lds-curgen-j1                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (11->6)            |sky130_fd_pr__pfet_01v8 (11->6)            
+sky130_fd_pr__nfet_01v8 (25->6)            |sky130_fd_pr__nfet_01v8 (25->6)            
+Number of devices: 12                      |Number of devices: 12                      
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: lds-curgen-j1                   |Circuit 2: lds-curgen-j1                   
+-------------------------------------------|-------------------------------------------
+Iin                                        |Iin                                        
+Ires                                       |Ires                                       
+VP                                         |VDD **Mismatch**                           
+VN                                         |GND **Mismatch**                           
+Vbp                                        |Vbp                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for lds-curgen-j1 and lds-curgen-j1 altered to match.
+Device classes lds-curgen-j1 and lds-curgen-j1 are equivalent.
+
+Class VGen (0):  Merged 37 parallel devices.
+Class VGen (1):  Merged 37 parallel devices.
+Subcircuit summary:
+Circuit 1: VGen                            |Circuit 2: VGen                            
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (25->6)            |sky130_fd_pr__pfet_01v8 (25->6)            
+sky130_fd_pr__nfet_01v8 (25->7)            |sky130_fd_pr__nfet_01v8 (25->7)            
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: VGen                            |Circuit 2: VGen                            
+-------------------------------------------|-------------------------------------------
+VN                                         |GND **Mismatch**                           
+Vbp                                        |Vbp                                        
+Vbn                                        |Vbn                                        
+VP                                         |VDD **Mismatch**                           
+Vcp                                        |Vcp                                        
+Vcn                                        |Vcn                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for VGen and VGen altered to match.
+Device classes VGen and VGen are equivalent.
+
+Subcircuit summary:
+Circuit 1: final.spice                     |Circuit 2: lvs-unflat.spice                
+-------------------------------------------|-------------------------------------------
+inverter (7)                               |inverter (7)                               
+lds-ladder (1)                             |lds-ladder (1)                             
+FVF_lds (1)                                |FVF_lds (1)                                
+lds-curgen-j1 (1)                          |lds-curgen-j1 (1)                          
+VGen (1)                                   |VGen (1)                                   
+Number of devices: 11                      |Number of devices: 11                      
+Number of nets: 24                         |Number of nets: 24                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes final.spice and lvs-unflat.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.
